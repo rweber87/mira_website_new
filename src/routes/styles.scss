@@ -1,0 +1,27 @@
+.chevron-wrapper {
+  position: sticky;
+  background: transparent;
+  top: 30%;
+  width: 100%;
+  z-index: 30;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  &:hover {
+    opacity: 50%;
+  }
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  &:hover {
+    opacity: 50%;
+  }
+}

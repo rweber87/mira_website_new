@@ -1,0 +1,45 @@
+.two-column-wrapper {
+  background-color: #16665d;
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: 'Raleway', sans-serif;
+
+  &__text {
+    margin: 0rem 4rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 100;
+    line-height: 30px;
+
+    .paragraph {
+      padding-bottom: 2rem;
+    }
+
+    .can-do {
+      &__title {
+        padding: 10rem 0 2rem 0;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+
+    .mira-gif {
+      padding: 0rem 3rem;
+    }
+  }
+
+  > * {
+    flex: 1;
+    min-width: 300px;
+  }
+}
