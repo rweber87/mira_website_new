@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles.scss';
 
 export default function YouTubeList({ videoUrls }) {
+  useEffect(() => {
+    window.scrollTo(-50, 0);
+  }, []);
+
   return (
     <div className='youtube-list'>
       {videoUrls.map((videoUrl, index) => (

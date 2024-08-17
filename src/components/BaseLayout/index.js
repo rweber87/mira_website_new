@@ -1,3 +1,4 @@
+import React from 'react';
 import { useLocation } from 'react-router';
 import Footer from '../Footer';
 import Nav from '../Nav';

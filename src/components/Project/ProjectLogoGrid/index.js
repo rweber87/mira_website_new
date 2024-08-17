@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ProjectImageRow from '../ProjectImageRow/';
 import AngledLine from '../../AngledLine';
 
 import './styles.scss';
 
 export default function ProjectLogoGrid({ companyInfo, imageGroups }) {
+  useEffect(() => {
+    window.scrollTo(-50, 0);
+  }, []);
+
   return (
     <div className='image-grid-logo'>
       {imageGroups.map((group, index, groups) => (

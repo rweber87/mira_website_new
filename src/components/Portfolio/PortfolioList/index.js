@@ -6,7 +6,7 @@ import './styles.scss';
 
 export default function PortfolioList() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(-50, 0);
   }, []);
 
   return (

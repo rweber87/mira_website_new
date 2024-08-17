@@ -18,12 +18,12 @@ export default function ProjectPage() {
   const isAnimation = page.videos?.length ? true : false;
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    window.scrollTo(-50, 0);
+  }, [projectId]);
 
   return (
     <>
-      <div className='project-page__text-wrapper'>
+      <div id='project-page' className='project-page__text-wrapper'>
         <div className='title'>{page.title}</div>
         <div className='description'>{page.description}</div>
         <div className='description_secondary'>{page.secondary}</div>

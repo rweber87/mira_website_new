@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { RowsPhotoAlbum } from 'react-photo-album';
 import gif from '../../assets/mira_hello.gif';
 
@@ -23,6 +23,10 @@ export default function Hallo() {
     'Klassischer Satz',
   ];
 
+  useEffect(() => {
+    window.scrollTo(-50, 0);
+  }, []);
+
   return (
     <div className='two-column-wrapper'>
       <div className='mira-gif'>
@@ -39,13 +43,17 @@ export default function Hallo() {
         />
       </div>
       <div className='two-column-wrapper__text'>
-        {text.map((t) => (
-          <div className='paragraph'>{t}</div>
+        {text.map((t, idx) => (
+          <div key={`paragraph-text-${idx}`} className='paragraph'>
+            {t}
+          </div>
         ))}
         <div className='can-do'>
           <div className='can-do__title'>Was ich kann</div>
-          {canDo.map((t) => (
-            <div className='job'>{t}</div>
+          {canDo.map((t, idx) => (
+            <div key={`can-do-text-${idx}`} className='job'>
+              {t}
+            </div>
           ))}
         </div>
       </div>
