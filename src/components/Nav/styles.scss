@@ -63,6 +63,7 @@ $underline: #ca5541;
     display: flex;
     font-family: 'Raleway', sans-serif;
     gap: 1rem;
+    z-index: 1000;
 
     a {
       color: #979797;
@@ -94,6 +95,7 @@ $underline: #ca5541;
     flex-direction: row;
 
     &__links {
+      position: fixed;
       padding-bottom: 2rem;
     }
   }

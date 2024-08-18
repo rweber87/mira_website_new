@@ -3,12 +3,14 @@
   z-index: 1000;
   color: white;
   font-family: 'Raleway', sans-serif;
+  width: 100%;
 
   .hamburger-react {
     position: fixed;
     top: 20px;
     right: 20px;
     z-index: 1100;
+    right: calc(100vw * -0.73);
   }
 
   .overlay {
