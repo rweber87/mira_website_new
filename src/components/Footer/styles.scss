@@ -44,6 +44,10 @@ $underline: #ca5541;
 
     @media (max-width: 767px) {
       flex-direction: column;
+
+      > * {
+        padding-bottom: 1em;
+      }
     }
 
     .footer__column {
