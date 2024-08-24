@@ -186,10 +186,12 @@ export const tiles = [
       ],
       title: 'Michael Fitz',
       description:
-        'Jeder Song auf diesem Album bekam eine individuell gestaltete, doppelseitige Collage inspiriert vom Sound und Gefühl des Liedes. Wir verarbeiteten dafür Kunstwerke und Fotografien aus dem Hause Fitz.',
+        'An Projekten für die Kunst und Kulturszene arbeiten zu dürfen, ist für mich, als Gestalterin und Musikerin, immer ein besonderes Geschenk. Der Münchner Musiker, Michael Fitz, brachte sein neues Album “Wenn I Schaug” in die Welt und ich durfte für die Agentur Grafikhaus, bei der ich damals angestellt war, das Design kreieren. Dafür durchsuchte, sortierte, kombiniert und mischte ich die gelieferten Daten, bestehend aus Ölgemälden und Fotografien aus dem Hause Fitz. Es entstand ein xx-seitiges Booklet, in dem jedes Lied eine individuell gestaltete, doppelseitige Collage erhielt - passend zum Text, Klang und Gefühl des jeweiligen Songs.',
       secondaryMain: 'Umsetzung: ',
       secondaryDescription:
-        'Cover   -   und Booklet   -   CD   -   Plakat   -   Notizkarten',
+        'CD-Cover und Booklet   -   CD   -   Plakat   -   Notizkarten',
+      thirdMain: 'Fotografie/Gemälde: ',
+      thirdDescription: 'Michael und Karin Fitz',
     },
   },
   {
@@ -343,7 +345,7 @@ export const tiles = [
       ],
       title: 'Logos',
       description:
-        'Logogestaltung und die Ausarbeitung einer stimmigen Gesamterscheinung gehört zu meinen Lieblingsaufgaben. Das feinfühlige Heranarbeiten an das finale Endergebnis ist immer wieder aufregend und auch oft Überraschung. Folgend ein paar Beispiele dieser kreativen Wutausbrüche.',
+        'Logogestaltung und die Ausarbeitung einer stimmigen Gesamterscheinung gehört zu meinen Lieblingsaufgaben. Das feinfühlige Heranarbeiten an das finale Endergebnis ist immer wieder spannend und auch oft überraschend. Folgend ein paar Beispiele dieser kreativen Wutausbrüche.',
       secondary: '',
       companyInfo: [
         {
@@ -498,13 +500,15 @@ export const tiles = [
       ],
       title: 'BinG! Barbershop Musikfestival',
       description:
-        'Nach über vier Jahren Corona-Pause lud BinG! ENDLICH wieder zum Barbershop Musikfestival ein. Wettbewerbe für Chor und Quartett, Shows, Afterglows, Coachings... ein Wochenende das gut geplant und in Szene gesetzt werden muss. Mit einem tollen Team haben wir echt was auf die Beine gestellt! Barbershop is back!!',
+        'Alle 2 Jahre lädt BinG, der deutsche Fachverband für Barbershopgesang, zum Barbershop Musikfestival ein. Neben den Wettbewerben für Chören und Quartetten gibt es auch Shows, Afterglows und Coachings ... ein Wochenende, das gut geplant und in Szene gesetzt werden muss. Nach einer langen Pandemie-Pause hieß es 2023 endlich wieder: “We are ready for our next contestant.”\nMit einem tollen Team haben wir echt was auf die Beine gestellt! Neuer Slogan, neuer Look! Und Ensembles und Zuschauer jubelten gemeinsam: Barbershop is back!!',
       secondary: '',
       secondaryMain: 'Umsetzung: ',
       secondaryDescription:
-        'Programmheft   -   Plakate   -   Flyer   -   Lanyards & Badges   -   Banner   -   Rollups   -   Pins',
-      thirdMain: 'Photographie: ',
-      thirdDescription: 'Eric Ideler',
+        'Programmheft   -   Webauftritt   -   Plakate   -   Flyer   -   Lanyards & Badges   -   Banner   -   Roll-ups   -   Merchandise   -   Bauchbinden',
+      thirdMain: 'Programmierung Webauftritt: ',
+      thirdDescription: 'Robbie Weber',
+      fourthMain: 'Fotografie: ',
+      fourthDescription: 'Eric Ideler',
     },
   },
   {
@@ -580,7 +584,7 @@ export const tiles = [
       ],
       title: 'The Jolly Krawchucks',
       description:
-        'Willow & Gareth wussten genau, welchen Vibe ihr besondere Tag haben sollte. Ich durfte mit der Gestaltung der Printsachen ein kein wenig helfen, ihre Vision zum Leben zu erwecken. Mit viel Liebe zum Detail kreierten die beiden ein Event, dass den Gästen noch lange in Erinnerung bleiben wird',
+        'Willow & Gareth wussten genau, welchen Vibe ihr besondere Tag haben sollte. Ich durfte mit der Gestaltung der Printsachen ein kein wenig helfen, ihre Vision zum Leben zu erwecken. Mit viel Liebe zum Detail kreierten die beiden ein Hochzeitswochenende, dass den Gästen noch lange in Erinnerung bleiben wird.',
       secondaryMain: 'Umsetzung: ',
       secondaryDescription:
         'Einladung  -   RSVP Karten  -   Platzkarten   -   Menü   -   Infoflyer   -   Hochzeitsandenken',
@@ -653,7 +657,9 @@ export const tiles = [
       title: 'Fischkopp & Bazi',
       description:
         'Sie aus dem hohen Norden, er aus dem tiefen Süden. Verbunden durch die Liebe zur Barbershop-Musik.',
-      secondary: '',
+      secondaryMain: 'Umsetzung: ',
+      secondaryDescription:
+        'Einladung  -   RSVP Karten   -   Menü   -   Dankeskarten',
     },
   },
   {
@@ -709,7 +715,7 @@ export const tiles = [
       ],
       title: 'Buchcover',
       description:
-        'Die Gestaltung von Buchcovern lässt mein Kreativ-Herz höher schlagen. Ähnlich wie bei der Logoentwicklung, geht es darum, dem Betrachter auf den ersten Blick die Essenz des Buches zu vermitteln. Dies gelingt mit aussagekräftigen Bildern, Grafiken. Manchmal reicht auch nur Typografie. Nicht jedes dieser Cover hat es in die Regale der Buchläden geschafft. Ich zeig sie trotzdem',
+        'Die Gestaltung von Buchcovern lässt mein Kreativ-Herz höherschlagen. Ähnlich wie bei der Logoentwicklung geht es darum, dem Betrachter auf den ersten Blick die Essenz des Buches zu vermitteln. Dies gelingt mit aussagekräftigen Bildern, Grafiken. Manchmal reicht auch nur Typografie. Nicht jedes der folgenden Cover hat es in die Regale der Buchläden geschafft. Ich zeige sie trotzdem.',
       secondary: '',
     },
   },
@@ -756,9 +762,13 @@ export const tiles = [
       description:
         'Manche Projekte sind Herzensprojekte. Ich finde, auch die dürfen gezeigt werden.',
       secondary:
-        'Zum Beispiel dieses einzigartige Geschenk für eine Freundin ihr zweites Kind erwartete. Gemeinsam mit einer Gruppe kreativer Freunde, erstellten wir dieses Kinderliederbuch der andere Art. Die ausgewählten Kinderlieder sind alt bekannt.',
+        'Zum Beispiel dieses einzigartige Geschenk für eine Freundin ihr zweites Kind erwartete. Gemeinsam mit einer Gruppe kreativer Freunde erstellten wir dieses Kinderliederbuch der anderen Art. Die ausgewählten Kinderlieder sind alt bekannt. Was besonders ist: Passend zum Buch gibt es auch eine CD! Wir haben die Lieder selbst eingesungen bzw. eingespielt. Dazu noch ein paar Bilder gemalt und schwups - war das 22-seitige Liederbuch fertig!',
       third:
-        'Was besonders ist: passend zum Buch gibt es auch eine CD! Wir haben die Lieder selbst eingesungen bzw. eingespielt. Dazu noch ein paar Bilder gemalt und schwups - war das 22-seitige Liederbuch fertig!',
+        'Oder die Zeitscheine, die wir meinem Papa zum 60sten geschenkt haben. Mit den Scheinen konnte er sich auserwählte Aktivitäten mit uns “kaufen”. Eisstockschießen, Städtetrip, Spieleabend... Gemeinsam Zeit verbringen.\nThats real value!',
+      secondaryMain: 'Umsetzung: ',
+      secondaryDescription: 'Liederbuch  -   CD',
+      thirdMain: 'Mitwirkende: ',
+      thirdDescription: 'Nina, Domi, Anna, Gabriele, Ramon',
     },
     secondPage: {
       images: [
@@ -787,7 +797,7 @@ export const tiles = [
       ],
       title: '',
       description:
-        'Oder die Zeitscheine, die wir meinem Papa zum 60sten geschenkt haben. Mit den Scheinen konnte er sich auserwählte Aktivitäten mit uns “kaufen”. Eisstockschießen, Städtetrip, Spieleabend... Gemeinsam Zeit verbringen.Thats real value!',
+        'Oder die Zeitscheine, die wir meinem Papa zum 60sten geschenkt haben. Mit den Scheinen konnte er sich auserwählte Aktivitäten mit uns “kaufen”. Eisstockschießen, Städtetrip, Spieleabend... Gemeinsam Zeit verbringen.\nThats real value!',
       secondary: '',
     },
   },
@@ -882,8 +892,11 @@ export const tiles = [
       ],
       title: 'Uta Sibert',
       description:
-        'Für diese Privatpraxis der Psychotherapie im Zentrum Münchens habe ich das bestehende CI überarbeitet. Ein besonderes Angebot der Praxis: Die Mutter-Kind Bindungsanalyse. Für dieses Angebot sollte dann auch ein eigener Look entstehen, der sich harmonisch in das Gestaltungskonzept der Praxis integriert. Mit einem Logo für “die Bindungsanalytikerin”, einem angepasstem Farbkonzept und passenden Webauftritt, entsteht somit ein Raum rund um die Themen, Frauen, Schwangerschaft und gesunden Babie',
+        'Für die Privatpraxis der Psychotherapie von Uta Siebert im Zentrum Münchens habe ich das bestehende CI überarbeitet und erweitert. Ein besonderes Angebot der Praxis: Die Mutter-Kind-Bindungsanalyse.Für diesen Teilbereich entwickelte ich ein optisches Konzept, welches sich harmonisch in das Gestaltungskonzept der Praxis integriert. Mit einem Logo für “die Bindungsanalytikerin”, einem angepassten Farbkonzept und passenden Webauftritt, entsteht somit ein Raum rund um die Themen Frauen, Schwangerschaft und gesunden Babies.',
       secondary: '',
+      secondaryMain: 'Umsetzung: ',
+      secondaryDescription:
+        'Logo  -   Geschäftsausstattung   -   Beschilderung   -   Flyer   -   Webauftritt',
     },
   },
   {
@@ -900,8 +913,13 @@ export const tiles = [
       ],
       title: 'Animation',
       description:
-        'Die Erstellung von bewegten Bildern eröffneten mir einen komplett neuen Raum der Kreativität. Das harmonische Zusammenspiel von Bild, Ton und Timing macht unglaublich viel Spaß. Hier zwei Beispiele von schlichter, animierter Weihnachtspost, ohne viel Tamtam.',
-      secondary: '',
+        'Die Erstellung von bewegten Bildern eröffneten mir einen komplett neuen Raum der Kreativität. Das harmonische Zusammenspiel von Bild, Ton und Timing fordert mich, auf genau die richtige Art und Weise.',
+      secondary:
+        'Hier zwei Beispiele von schlichter, animierter Weihnachtspost, ohne viel Tamtam.',
+      secondVideo: [
+        'https://www.youtube.com/embed/_Wro0ZFy9zk?si=H5uUhvYHPRYfnnBd',
+      ],
+      secondMain: 'Ein Logo zum Leben erwecken? Klar!',
     },
   },
   {
@@ -961,7 +979,7 @@ export const tiles = [
       ],
       title: 'Robbie & Mira',
       description:
-        'Und wenn sich die Berufsbilder so wunderbar ergänzen, kann man sogar die Hochzeits-Webpage gemeinsam erstellen. Genial!',
+        'Und wenn sich die Berufsbilder so wunderbar ergänzen, kann man die Hochzeitswebpage gemeinsam erstellen. Teamwork makes the dream work. Genial!',
       secondaryMain: 'Umsetzung: ',
       secondaryDescription:
         'Einladung  -   Infoflyer   -   Webauftritt   -   Dankeskarten',

@@ -5,6 +5,7 @@ import Chevrons from '../components/Chevrons/';
 import PortfolioList from '../components/Portfolio/PortfolioList';
 import ProjectPage from '../components/Project/ProjectPage';
 import Hallo from '../components/Hallo';
+import Impressum from '../components/Impressum';
 
 import './styles.scss';
 
@@ -43,6 +44,10 @@ const routes = [
       {
         path: 'hallo',
         element: <Hallo />,
+      },
+      {
+        path: 'impressum-datunschutz',
+        element: <Impressum />,
       },
     ],
   },

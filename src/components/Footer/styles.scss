@@ -33,7 +33,14 @@ $underline: #ca5541;
   .footer__text_wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
     transform: skewY(1deg);
+    .get_in_touch {
+      font-size: 35px;
+      color: #90a996;
+      font-weight: 700;
+    }
 
     @media (max-width: 767px) {
       flex-direction: column;
@@ -43,22 +50,14 @@ $underline: #ca5541;
       padding-right: 4rem;
       line-height: 20px;
 
+      .text-link {
+        text-decoration: underline $fontColor;
+        color: $fontColor;
+      }
+
       @media (max-width: 767px) {
         margin-bottom: 1rem;
       }
-    }
-  }
-
-  &__last {
-    margin-left: auto;
-    padding-right: 5rem;
-    line-height: 20px;
-
-    @media (max-width: 767px) {
-      margin-left: 0px;
-      flex-direction: column;
-      padding-right: 0rem;
-      padding-top: 3rem;
     }
   }
 }

@@ -16,6 +16,7 @@
     }
 
     .description {
+      white-space: pre-line;
       width: 65%;
       @media (max-width: 768px) {
         width: 100%;
@@ -41,12 +42,18 @@
 
     .secondary-wrapper {
       display: flex;
-      flex-direction: row;
-      @media (max-width: 767px) {
-        flex-direction: column;
-      }
+      flex-direction: column;
+      padding-top: 1.5em;
     }
   }
+}
+
+.secondary-video-description {
+  font-family: 'Raleway', sans-serif;
+  line-height: 32px;
+  color: #979797;
+  font-weight: 100;
+  padding-bottom: 2em;
 }
 
 .angled-line-project {

@@ -1,0 +1,25 @@
+.impressum-wrapper {
+  color: white;
+  font-size: 1.25em;
+  font-family: 'Raleway', sans-serif;
+  line-height: 30px;
+  font-weight: 100;
+  padding-top: 4em;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+
+  .section-wrapper {
+    padding-bottom: 4em;
+
+    .section-header {
+      font-weight: 700;
+    }
+
+    .section-text-section {
+      padding-bottom: 1.5em;
+      .secondary-header {
+        margin-bottom: -1em;
+      }
+    }
+  }
+}

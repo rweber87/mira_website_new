@@ -33,15 +33,30 @@ export default function ProjectPage() {
             {page.secondaryDescription}
           </div>
         </div>
-        <div className='secondary-wrapper'>
-          <div className='description_third-main'>{page.thirdMain}</div>
-          <div className='description_third-description'>
-            {page.thirdDescription}
+        {page.thirdMain && (
+          <div className='secondary-wrapper'>
+            <div className='description_third-main'>{page.thirdMain}</div>
+            <div className='description_third-description'>
+              {page.thirdDescription}
+            </div>
           </div>
-        </div>
+        )}
+        {page.fourthMain && (
+          <div className='secondary-wrapper'>
+            <div className='description_third-main'>{page.fourthMain}</div>
+            <div className='description_third-description'>
+              {page.fourthDescription}
+            </div>
+          </div>
+        )}
       </div>
       {isAnimation ? (
-        <ProjectVideoGrid videoUrls={page.videos} />
+        <>
+          <ProjectVideoGrid videoUrls={page.videos} />
+          <AngledLine />
+          <div className='secondary-video-description'>{page.secondMain}</div>
+          <ProjectVideoGrid videoUrls={page.secondVideo} />
+        </>
       ) : isLogoPage ? (
         <ProjectLogoGrid
           imageGroups={page.images}
