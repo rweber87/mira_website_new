@@ -23,7 +23,7 @@ export default function Tile({ tile }) {
           />
           <div className={`tile__overlay ${hovered ? 'hovered' : ''}`}>
             <span className='tile__text'>{topText}</span>
-            <span className='tile__bot-text'>{botText}</span>
+            {botText && <span className='tile__bot-text'>{botText}</span>}
           </div>
         </Link>
       ) : (

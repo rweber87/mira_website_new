@@ -1,9 +1,9 @@
 .mobile-menu {
   position: relative;
-  z-index: 1000;
   color: white;
   font-family: 'Raleway', sans-serif;
   width: 100%;
+  transform: rotate(1deg);
 
   .hamburger-react {
     position: fixed;
@@ -15,9 +15,9 @@
 
   .overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 10px;
+    left: -70px;
+    width: 150%;
     height: 100%;
     background: #16665d;
     display: flex;

@@ -8,7 +8,7 @@ export default function Footer() {
       <div className='footer__wrapper'>
         <div className='footer__text_wrapper'>
           <div className='footer__column'>
-            <div className='get_in_touch'>Get in touch</div>
+            <div className='lets_connect'>Let's Connect</div>
           </div>
           <div className='footer__column'>
             <div className='text'>hello@mirataferner.com</div>

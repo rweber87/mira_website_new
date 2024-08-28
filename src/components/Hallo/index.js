@@ -31,8 +31,7 @@ export default function Hallo() {
       <div className='two-column-wrapper'>
         <div className='two-column-wrapper__text'>
           <div className='section lust-text'>
-            <div>Lust mit mir über ein Projekt zu sprechen?</div>
-            <div>Reach out!</div>
+            <div>Lust mit mir über ein Projekt zu sprechen? Reach out!</div>
           </div>
           <div className='section'>
             <div>hallo@mirataferner.com</div>
@@ -74,8 +73,8 @@ export default function Hallo() {
         </div>
         <div className='header list'>Was ich anbiete</div>
         <ul>
-          {canDo.map((c) => (
-            <li>{c}</li>
+          {canDo.map((c, idx) => (
+            <li key={`can-do-${idx}`}>{c}</li>
           ))}
         </ul>
       </div>

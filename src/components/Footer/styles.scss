@@ -23,7 +23,7 @@ $underline: #ca5541;
   &__wrapper {
     position: absolute;
     bottom: 0px;
-    border-top: 2px solid $underline;
+    border-top: 1px solid $underline;
     width: 100vw;
     padding: 5rem 2rem;
     background-color: $background;
@@ -36,9 +36,9 @@ $underline: #ca5541;
     justify-content: space-between;
     width: 100vw;
     transform: skewY(1deg);
-    .get_in_touch {
-      font-size: 35px;
-      color: #90a996;
+    .lets_connect {
+      font-size: 25px;
+      color: $underline;
       font-weight: 700;
     }
 

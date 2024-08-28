@@ -55,5 +55,44 @@ export default function Nav() {
         </div>
       )}
     </nav>
+    // <div className='navbar'>
+    //   <div className='navbar-wrapper'>
+    //     <Link
+    //       className={`navbar__name ${
+    //         pathname.includes('portfolio/') ? 'active' : ''
+    //       }`}
+    //       to='/'
+    //     >
+    //       <span className='first_name'>mira</span>taferner
+    //     </Link>
+
+    //     {displayHamburger ? (
+    //       <div className='navbar__links'>
+    //         <HamburgerMenu />
+    //       </div>
+    //     ) : (
+    //       <div className='navbar__wrapper'>
+    //         <div className='navbar__links'>
+    //           <Link
+    //             className={`navbar__link ${
+    //               pathname.includes('portfolio') ? 'active' : ''
+    //             }`}
+    //             to='/portfolio'
+    //           >
+    //             portfolio
+    //           </Link>
+    //           <Link
+    //             className={`navbar__link hallo-link ${
+    //               pathname.includes('hallo') ? 'active' : ''
+    //             }`}
+    //             to='/hallo'
+    //           >
+    //             hallo
+    //           </Link>
+    //         </div>
+    //       </div>
+    //     )}
+    //   </div>
+    // </div>
   );
 }

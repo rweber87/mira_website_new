@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import './styles.scss';
 
@@ -11,6 +11,10 @@ export default function Impressum() {
     'Verwendetes Betriebssystem',
     'Verwendete IP-Adresse',
   ];
+
+  useEffect(() => {
+    window.scrollTo(-50, 0);
+  }, []);
 
   return (
     <div className='impressum-wrapper'>
