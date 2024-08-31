@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { tiles } from '../../Portfolio/tiles';
 import useProjectId from '../../../hooks/projectId';
@@ -7,14 +7,17 @@ import usePageNavigation from '../../../hooks/hasNextPreviousPage';
 import './styles.scss';
 
 export default function ChevronLeft(props) {
+  const [strokeWidth, setStrokeWidth] = useState(0.25);
   const pages = tiles.filter((tile) => tile.shouldHover);
   const projectId = useProjectId();
-  const { hasPrevious, prevId } = usePageNavigation(pages, projectId);
+  const { hasPrevious, lastId, prevId } = usePageNavigation(pages, projectId);
 
   return (
     <Link
-      className={`left ${hasPrevious ? '' : 'hide'}`}
-      to={`/portfolio/${prevId}`}
+      className='left'
+      to={`/portfolio/${hasPrevious ? prevId : lastId}`}
+      onMouseEnter={() => setStrokeWidth(0.75)}
+      onMouseLeave={() => setStrokeWidth(0.25)}
     >
       <button className='chevron-icon'>
         <svg
@@ -24,7 +27,7 @@ export default function ChevronLeft(props) {
           role='img'
           aria-labelledby='chevronLeftIconTitle'
           stroke='#CA5541'
-          strokeWidth={0.25}
+          strokeWidth={strokeWidth}
           strokeLinecap='square'
           strokeLinejoin='miter'
           fill='none'

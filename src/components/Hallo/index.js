@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { RowsPhotoAlbum } from 'react-photo-album';
 import Behance from '../Icons/Behance';
 import LinkedIn from '../Icons/LinkedIn';
-import gif from '../../assets/mira_hello.gif';
+import { tileUrl } from '../Portfolio/tiles';
 
 import './styles.scss';
 
@@ -41,12 +41,16 @@ export default function Hallo() {
             <Link
               className='icon linkedin'
               to='https://www.linkedin.com/in/mira-taferner-5b54a563/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <LinkedIn />
             </Link>
             <Link
               className='icon behance'
               to='https://www.behance.net/miratafernbf78'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <Behance />
             </Link>
@@ -56,9 +60,9 @@ export default function Hallo() {
           <RowsPhotoAlbum
             photos={[
               {
-                src: gif,
-                width: 1620,
-                height: 1080,
+                src: tileUrl + 'hallo_Mira.gif',
+                width: 666,
+                height: 332,
                 alt: 'mira_gif',
               },
             ]}

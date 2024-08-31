@@ -1,4 +1,4 @@
-$mainGreen: #16665d;
+$mainGreen: #688563;
 $background: #d9ebbe;
 $fontColor: #979797;
 $underline: #ca5541;
@@ -6,7 +6,7 @@ $underline: #ca5541;
 .footer {
   position: relative;
   font-family: 'Raleway', sans-serif;
-  color: $fontColor;
+  color: white;
 
   &::after {
     content: '';
@@ -25,7 +25,7 @@ $underline: #ca5541;
     bottom: 0px;
     border-top: 1px solid $underline;
     width: 100vw;
-    padding: 5rem 2rem;
+    padding: 5rem 2rem 3rem 2rem;
     background-color: $background;
     transform: skewY(-1deg);
   }
@@ -38,8 +38,16 @@ $underline: #ca5541;
     transform: skewY(1deg);
     .lets_connect {
       font-size: 25px;
-      color: $underline;
-      font-weight: 700;
+      color: $mainGreen;
+      font-weight: 800;
+    }
+
+    .text {
+      .text-footer-link {
+        font-weight: 800;
+        text-decoration: none;
+        color: white;
+      }
     }
 
     @media (max-width: 767px) {
@@ -50,17 +58,39 @@ $underline: #ca5541;
       }
     }
 
+    .footer__column:first-of-type {
+      width: 50vw;
+      font-weight: 300;
+      @media (max-width: 767px) {
+        width: auto;
+        height: 15vh;
+      }
+    }
+
     .footer__column {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       padding-right: 4rem;
       line-height: 20px;
 
-      .text-link {
+      .impressum {
+        color: white;
+        font-weight: 400;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+      &:first-child .text-link {
         text-decoration: underline $fontColor;
         color: $fontColor;
       }
 
       @media (max-width: 767px) {
         margin-bottom: 1rem;
+        flex-direction: column;
       }
     }
   }

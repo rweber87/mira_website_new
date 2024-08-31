@@ -8,17 +8,18 @@
     font-family: 'Raleway', sans-serif;
     line-height: 32px;
     color: #979797;
-    font-weight: 100;
     padding-bottom: 5rem;
 
     .title {
       font-size: 2rem;
       padding-bottom: 2rem;
+      font-weight: 300;
     }
 
     .description {
       white-space: pre-line;
       width: 65%;
+      font-weight: 400;
       @media (max-width: 768px) {
         width: 100%;
       }
@@ -27,6 +28,7 @@
     .description_secondary {
       padding-top: 2rem;
       width: 65%;
+      font-weight: 400;
       @media (max-width: 768px) {
         width: 100%;
       }
@@ -34,17 +36,26 @@
 
     .description_secondary-main,
     .description_third-main {
-      font-weight: bold;
+      font-weight: 400;
       padding-right: 1em;
+      color: #ca5541;
       @media (max-width: 767px) {
         padding-right: 0em;
       }
+    }
+
+    .description_third-description {
+      white-space: pre-line;
     }
 
     .secondary-wrapper {
       display: flex;
       flex-direction: column;
       padding-top: 1.5em;
+
+      .description_secondary-description {
+        font-weight: 400;
+      }
     }
   }
 }
@@ -53,7 +64,7 @@
   font-family: 'Raleway', sans-serif;
   line-height: 32px;
   color: #979797;
-  font-weight: 100;
+  font-weight: 400;
   padding-bottom: 2em;
 }
 

@@ -24,15 +24,23 @@ export default function ProjectPage() {
   return (
     <>
       <div id='project-page' className='project-page__text-wrapper'>
-        <div className='title'>{page.title}</div>
-        <div className='description'>{page.description}</div>
-        <div className='description_secondary'>{page.secondary}</div>
-        <div className='secondary-wrapper'>
-          <div className='description_secondary-main'>{page.secondaryMain}</div>
-          <div className='description_secondary-description'>
-            {page.secondaryDescription}
+        {page.title && <div className='title'>{page.title}</div>}
+        {page.description && (
+          <div className='description'>{page.description}</div>
+        )}
+        {page.secondary && (
+          <div className='description_secondary'>{page.secondary}</div>
+        )}
+        {page.secondaryMain && (
+          <div className='secondary-wrapper'>
+            <div className='description_secondary-main'>
+              {page.secondaryMain}
+            </div>
+            <div className='description_secondary-description'>
+              {page.secondaryDescription}
+            </div>
           </div>
-        </div>
+        )}
         {page.thirdMain && (
           <div className='secondary-wrapper'>
             <div className='description_third-main'>{page.thirdMain}</div>
@@ -71,13 +79,19 @@ export default function ProjectPage() {
                 <AngledLine />
               </div>
               <div className='project-page__text-wrapper'>
-                <div className='title'>{project.secondPage.title}</div>
-                <div className='description'>
-                  {project.secondPage.description}
-                </div>
-                <div className='description_secondary'>
-                  {project.secondPage.secondary}
-                </div>
+                {project.secondPage.title && (
+                  <div className='title'>{project.secondPage.title}</div>
+                )}
+                {project.secondPage.description && (
+                  <div className='description'>
+                    {project.secondPage.description}
+                  </div>
+                )}
+                {project.secondPage.secondary && (
+                  <div className='description_secondary'>
+                    {project.secondPage.secondary}
+                  </div>
+                )}{' '}
               </div>
               <ProjectImageGrid
                 imageGroups={project.secondPage.images}

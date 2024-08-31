@@ -1,69 +1,133 @@
-$mainGreen: #16665d;
+$mainGreen: #688563;
 $activeGreen: #d9ebbe;
 $background: white;
 $underline: #ca5541;
 
 .navbar {
-  position: sticky !important;
-  top: 0;
-  width: 100%;
-  background-color: $background;
-  color: $mainGreen;
+  background: white;
+  height: 120px;
   display: flex;
-  justify-content: space-between;
+  transform: rotate(-1deg);
+  z-index: 1;
+  flex-direction: row;
   align-items: center;
-  padding: 1rem 2rem;
-  z-index: 1000;
-  box-sizing: border-box;
-  position: relative;
+  width: 110vw;
+  position: fixed;
+  top: -20px;
+  left: -3px;
   overflow: hidden;
-  height: 100px;
 
   &.active {
-    background-color: $activeGreen;
-    &::after {
-      background-color: $background;
-    }
+    background: #c2d2a8;
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -46px;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    transform: skewY(-1deg);
-    transform-origin: bottom left;
-    z-index: 10;
-    background-color: $mainGreen;
+  .navbar-wrapper {
+    width: 1280px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 1220px) {
+      max-width: auto !important;
+      padding: 0rem 4rem;
+    }
   }
 
   .first_name {
     font-family: 'Raleway', sans-serif;
+    font-style: normal;
     font-weight: 100;
   }
 
   &__name {
-    color: $mainGreen;
-    font-size: 2rem;
-    font-weight: bold;
     font-family: 'Lora', serif;
-    margin-bottom: -75px;
-    box-sizing: border-box;
-    z-index: 1;
-    text-decoration: none;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: auto;
+    color: $mainGreen;
+    font-size: 2.5rem;
+    transform: rotate(1deg);
+    bottom: -77px !important;
+    position: absolute;
+    left: -0.5rem;
 
     &.active {
-      color: $background;
+      color: white;
+    }
+
+    @media (min-width: 1851px) and (max-width: 2000px) {
+      left: -2.5rem;
+    }
+
+    @media (min-width: 1700px) and (max-width: 1850px) {
+      left: -2rem;
+    }
+
+    @media (min-width: 1599px) and (max-width: 1699px) {
+      left: -1.5rem;
+    }
+
+    @media (min-width: 1220px) and (max-width: 1598px) {
+      left: -1rem;
+    }
+
+    @media (min-width: 1180px) and (max-width: 1219px) {
+      padding-left: 4rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 1180px) {
+      padding-left: 2.5rem;
+    }
+
+    @media (max-width: 767px) {
+      bottom: -50px;
+      left: 1rem;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    transform: rotate(1deg);
+    right: 8rem;
+
+    @media (min-width: 1851px) and (max-width: 2000px) {
+      right: 9.5rem;
+    }
+
+    @media (min-width: 1701px) and (max-width: 1850px) {
+      right: 9rem;
+    }
+
+    @media (min-width: 1550px) and (max-width: 1700px) {
+      right: 8.5rem;
+    }
+
+    @media (min-width: 1201px) and (max-width: 1300px) {
+      right: 7.5rem;
+    }
+
+    @media (min-width: 1101px) and (max-width: 1200px) {
+      right: 10rem;
+    }
+
+    @media (min-width: 990px) and (max-width: 1100px) {
+      right: 9rem;
     }
   }
 
   &__links {
     display: flex;
+    flex-direction: row;
     font-family: 'Raleway', sans-serif;
-    gap: 1rem;
-    z-index: 1000;
+
+    &.portfolio-page {
+      color: white;
+    }
+
+    .hallo-link {
+      margin-left: 5rem;
+      text-align: right;
+    }
 
     a {
       color: #979797;
@@ -72,118 +136,19 @@ $underline: #ca5541;
       font-size: 1rem;
       font-weight: 500;
       position: relative;
-      padding: 0.25rem 0;
-      margin: 0 1em;
       display: inline-block;
-      width: 5em;
 
       &.active {
-        border-bottom: 2px solid $underline;
+        color: $underline;
+      }
+
+      &.portfolio-page {
+        color: white;
       }
 
       &:hover {
-        color: $underline;
-        font-weight: bold;
-        border-bottom: 2px solid transparent;
+        opacity: 0.5;
       }
     }
   }
 }
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: row;
-
-    &__links {
-      position: fixed;
-      padding-bottom: 2rem;
-    }
-  }
-}
-
-// .navbar {
-//   font-family: 'Raleway', sans-serif;
-//   background: white;
-//   height: 120px;
-//   display: flex;
-//   z-index: 1;
-//   flex-direction: row;
-//   align-items: center;
-//   transform: rotate(-1deg);
-//   width: 110vw;
-//   position: fixed;
-//   top: -20px;
-//   left: -3px;
-//   overflow: hidden;
-
-//   .navbar-wrapper {
-//     width: 1280px;
-//     position: relative;
-//     margin-left: auto;
-//     margin-right: auto;
-
-//     @media (max-width: 1220px) {
-//       max-width: auto !important;
-//       padding: 0rem 4rem;
-//     }
-//   }
-
-//   .first_name {
-//     font-weight: 100;
-//   }
-
-//   &__name {
-//     margin-top: auto;
-//     color: $mainGreen;
-//     font-size: 2.5rem;
-//     transform: rotate(1deg);
-//     bottom: -74px;
-//     position: absolute;
-//     left: -0.5rem;
-
-//     @media (max-width: 1220px) {
-//       padding-left: 3rem;
-//     }
-
-//     @media (max-width: 768px) {
-//       bottom: -50px;
-//     }
-//   }
-
-//   &__wrapper {
-//     position: absolute;
-//     transform: rotate(1deg);
-//     right: 8rem;
-//   }
-
-//   &__links {
-//     display: flex;
-//     flex-direction: row;
-//     font-family: 'Raleway', sans-serif;
-
-//     .hallo-link {
-//       margin-left: 5rem;
-//       text-align: right;
-//     }
-
-//     a {
-//       color: #979797;
-//       text-decoration: none;
-//       text-align: center;
-//       font-size: 1rem;
-//       font-weight: 500;
-//       position: relative;
-//       display: inline-block;
-
-//       &.active {
-//         border-bottom: 1px solid $underline;
-//       }
-
-//       &:hover {
-//         color: $underline;
-//         font-weight: bold;
-//         border-bottom: 2px solid transparent;
-//       }
-//     }
-//   }
-// }

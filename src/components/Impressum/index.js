@@ -27,7 +27,7 @@ export default function Impressum() {
           <div className='section-text'>80469 München</div>
         </div>
         <div className='section-text-section'>
-          <div className='section-text'>hello@mirataferner.com</div>
+          <div className='section-text'>hallo@mirataferner.com</div>
           <div className='section-text'>+49 176 552 852 94</div>
         </div>
       </div>
@@ -56,8 +56,8 @@ export default function Impressum() {
           <div className='secondary-header'>Besuchte Website</div>
           <div className='section-text'>
             <ul>
-              {websiteList.map((p) => (
-                <li>{p}</li>
+              {websiteList.map((p, idx) => (
+                <li key={`impressum-${idx}`}>{p}</li>
               ))}
             </ul>
           </div>

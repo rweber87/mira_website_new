@@ -1,14 +1,13 @@
 .two-column-wrapper {
-  background-color: #16665d;
-  padding-top: 3rem;
+  background-color: #688563;
   padding-bottom: 5rem;
   display: flex;
   flex-wrap: nowrap;
   font-family: 'Raleway', sans-serif;
-  letter-spacing: 1.5px;
+  max-width: 1170px;
 
   &__text {
-    margin: 0rem 4rem 0rem 0rem;
+    margin: 0rem 8rem 0rem 0rem;
     display: flex;
     flex-direction: column;
     color: white;
@@ -71,7 +70,6 @@
   font-weight: 100;
   line-height: 25px;
   font-family: 'Raleway', sans-serif;
-  letter-spacing: 1.5px;
 
   .section {
     padding-bottom: 2em;

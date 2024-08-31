@@ -8,7 +8,8 @@ $fontColor: #979797;
 
   &__image-wrapper {
     width: 100vw;
-    padding: 1rem 3rem;
+    max-width: 1170px;
+    padding: 2rem 3rem;
     @media (max-width: 767px) {
       padding: 0rem 3rem 10px 3rem;
     }

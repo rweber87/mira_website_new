@@ -1,41 +1,72 @@
+$orange: #ca5541;
+
 .mobile-menu {
-  position: relative;
+  position: fixed;
   color: white;
   font-family: 'Raleway', sans-serif;
   width: 100%;
-  transform: rotate(1deg);
+  z-index: 1200;
 
   .hamburger-react {
     position: fixed;
     top: 20px;
-    right: 20px;
-    z-index: 1100;
-    right: calc(100vw * -0.73);
+    z-index: 1201;
+    right: -80vw;
+
+    @media (max-width: 768px) {
+      right: -43.5rem;
+    }
+
+    @media (min-width: 720px) and (max-width: 750px) {
+      right: -41.5rem;
+    }
+
+    @media (min-width: 695px) and (max-width: 719px) {
+      right: -40.5rem;
+    }
+
+    @media (min-width: 685px) and (max-width: 694px) {
+      right: -39.5rem;
+    }
+
+    @media (min-width: 675px) and (max-width: 684px) {
+      right: -90vw;
+    }
+
+    @media (max-width: 674px) {
+      right: -85vw;
+    }
   }
 
   .overlay {
     position: fixed;
-    top: 10px;
-    left: -70px;
+    top: 0;
+    left: 0;
     width: 150%;
     height: 100%;
-    background: #16665d;
+    background: #688563;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
-    z-index: 1000;
+    z-index: 1200;
     padding-top: 3rem;
+    padding-left: 2rem;
 
     .hamburger__main-link {
       color: white;
       padding-top: 1rem;
       line-height: 30px;
       font-size: 30px;
-      letter-spacing: 3px;
-      font-weight: 100;
+      font-weight: 300;
       text-align: left;
+      text-decoration: none;
+
+      &.active {
+        color: $orange;
+        text-decoration: underline $orange;
+      }
     }
 
     .hamburger__sub-links {
@@ -48,12 +79,17 @@
       .hamburger__sub-link {
         color: white;
         font-family: 'Raleway', sans-serif;
-        line-height: 30px;
-        font-size: 14px;
-        letter-spacing: 3px;
-        font-weight: 100;
+        font-size: 20px;
+        font-weight: 300;
         white-space: nowrap;
         text-align: left;
+        text-decoration: none;
+        padding-bottom: 1rem;
+
+        &.active {
+          color: $orange;
+          text-decoration: underline $orange;
+        }
       }
     }
 

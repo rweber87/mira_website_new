@@ -1,122 +1,22 @@
-import tile1 from '../../assets/tiles/Project 1.png';
-import tile3 from '../../assets/tiles/Project 3.png';
-import tile4 from '../../assets/tiles/Project 4.png';
-import tile5 from '../../assets/tiles/Project 5.png';
-import tile6 from '../../assets/tiles/Project 6.png';
-import tile7 from '../../assets/tiles/Project 7.png';
-import tile8 from '../../assets/tiles/Project 8.png';
-import tile9 from '../../assets/tiles/Project 9.png';
-import tile10 from '../../assets/tiles/Project 10.png';
-
-import logoGif from '../../assets/tiles/logo-tile-gif.gif';
-
-import project1Image1 from '../../assets/project_1_images/Picture 1.png';
-import project1Image2 from '../../assets/project_1_images/Picture 2.png';
-import project1Image3 from '../../assets/project_1_images/Picture 3.png';
-import project1Image4 from '../../assets/project_1_images/Picture 4.png';
-import project1Image5 from '../../assets/project_1_images/Picture 5.png';
-import project1Image6 from '../../assets/project_1_images/Picture 6.png';
-import project1Image7 from '../../assets/project_1_images/Picture 7.png';
-import project1Image8 from '../../assets/project_1_images/Picture 8.png';
-
-import project2Image1 from '../../assets/project_2_images/Picture 1.png';
-import project2Image2 from '../../assets/project_2_images/Picture 2.png';
-import project2Image3 from '../../assets/project_2_images/Picture 3.png';
-import project2Image4 from '../../assets/project_2_images/Picture 4.png';
-import project2Image5 from '../../assets/project_2_images/Picture 5.png';
-import project2Image6 from '../../assets/project_2_images/Picture 6.png';
-import project2Image7 from '../../assets/project_2_images/Picture 7.png';
-import project2Image8 from '../../assets/project_2_images/Picture 8.png';
-import project2Image9 from '../../assets/project_2_images/Picture 9.png';
-import project2Image10 from '../../assets/project_2_images/Picture 10.png';
-import project2Image11 from '../../assets/project_2_images/Picture 11.png';
-import project2Image12 from '../../assets/project_2_images/Picture 12.png';
-import project2Image13 from '../../assets/project_2_images/Picture 13.png';
-import project2Image14 from '../../assets/project_2_images/Picture 14.png';
-import project2Image15 from '../../assets/project_2_images/Picture 15.png';
-import project2Image16 from '../../assets/project_2_images/Picture 16.png';
-import project2Image17 from '../../assets/project_2_images/Picture 17.png';
-import project2Image18 from '../../assets/project_2_images/Picture 18.png';
-import project2Image19 from '../../assets/project_2_images/Picture 19.png';
-import project2Image20 from '../../assets/project_2_images/Picture 20.png';
-
-import project3Image1 from '../../assets/project_3_images/Picture 1.png';
-import project3Image2 from '../../assets/project_3_images/Picture 2.png';
-import project3Image3 from '../../assets/project_3_images/Picture 3.png';
-import project3Image4 from '../../assets/project_3_images/Picture 4.png';
-import project3Image5 from '../../assets/project_3_images/Picture 5.png';
-import project3Image6 from '../../assets/project_3_images/Picture 6.png';
-import project3Image7 from '../../assets/project_3_images/Picture 7.png';
-import project3Image8 from '../../assets/project_3_images/Picture 8.png';
-import project3Image9 from '../../assets/project_3_images/Picture 9.png';
-import project3Image10 from '../../assets/project_3_images/Picture 10.png';
-import project3Image11 from '../../assets/project_3_images/Picture 11.png';
-import project3Image12 from '../../assets/project_3_images/Picture 12.png';
-import project3Image13 from '../../assets/project_3_images/Picture 13.png';
-
-import project4Image1 from '../../assets/project_4_images/Picture 1.png';
-import project4Image2 from '../../assets/project_4_images/Picture 2.png';
-import project4Image3 from '../../assets/project_4_images/Picture 3.png';
-import project4Image4 from '../../assets/project_4_images/Picture 4.png';
-import project4Image5 from '../../assets/project_4_images/Picture 5.png';
-import project4Image6 from '../../assets/project_4_images/Picture 6.png';
-import project4Image7 from '../../assets/project_4_images/Picture 7.png';
-import project4Image8 from '../../assets/project_4_images/Picture 8.png';
-
-import project5Image1 from '../../assets/project_5_images/Picture 1.png';
-import project5Image2 from '../../assets/project_5_images/Picture 2.png';
-import project5Image3 from '../../assets/project_5_images/Picture 3.png';
-import project5Image4 from '../../assets/project_5_images/Picture 4.png';
-import project5Image5 from '../../assets/project_5_images/Picture 5.png';
-import project5Image6 from '../../assets/project_5_images/Picture 6.png';
-
-import project6Image1 from '../../assets/project_6_images/Picture 1.png';
-import project6Image2 from '../../assets/project_6_images/Picture 2.png';
-import project6Image3 from '../../assets/project_6_images/Picture 3.png';
-import project6Image4 from '../../assets/project_6_images/Picture 4.png';
-import project6Image5 from '../../assets/project_6_images/Picture 5.png';
-import project6Image6 from '../../assets/project_6_images/Picture 6.png';
-
-import project7Image1 from '../../assets/project_7_images/Picture 1.png';
-import project7Image2 from '../../assets/project_7_images/Picture 2.png';
-import project7Image3 from '../../assets/project_7_images/Picture 3.png';
-import project7Image4 from '../../assets/project_7_images/Picture 4.png';
 import project7Image5 from '../../assets/project_7_images/Picture 5.png';
 import project7Image6 from '../../assets/project_7_images/Picture 6.png';
 import project7Image7 from '../../assets/project_7_images/Picture 7.png';
 
-import project8Image1 from '../../assets/project_8_images/Picture 1.png';
-import project8Image2 from '../../assets/project_8_images/Picture 2.png';
-import project8Image3 from '../../assets/project_8_images/Picture 3.png';
-import project8Image4 from '../../assets/project_8_images/Picture 4.png';
-import project8Image5 from '../../assets/project_8_images/Picture 5.png';
-import project8Image6 from '../../assets/project_8_images/Picture 6.png';
-import project8Image7 from '../../assets/project_8_images/Picture 7.png';
-import project8Image8 from '../../assets/project_8_images/Picture 8.png';
-import project8Image9 from '../../assets/project_8_images/Picture 9.png';
-import project8Image10 from '../../assets/project_8_images/Picture 10.png';
-import project8Image11 from '../../assets/project_8_images/Picture 11.png';
-
-import project9Image1 from '../../assets/project_9_images/Picture 1.png';
-import project9Image2 from '../../assets/project_9_images/Picture 2.png';
-import project9Image3 from '../../assets/project_9_images/Picture 3.png';
-import project9Image4 from '../../assets/project_9_images/Picture 4.png';
-import project9Image5 from '../../assets/project_9_images/Picture 5.png';
-import project9Image6 from '../../assets/project_9_images/Picture 6.png';
-
-import concept from '../../assets/tiles/Group 2.png';
-import portfolio from '../../assets/tiles/Group 3.png';
+const primaryUrl = 'https://mira-website-new.s3.amazonaws.com/';
+const tileLoc = 'tile-images/';
+const projectLoc = 'projects/';
+export const tileUrl = primaryUrl + tileLoc;
 
 export const tiles = [
   {
-    imageSrc: concept,
+    imageSrc: tileUrl + 'group_2.png',
     topText: '',
     botText: '',
     id: 0,
     shouldHover: false,
   },
   {
-    imageSrc: tile1,
+    imageSrc: tileUrl + 'Landigpage_Fitz.png',
     topText: 'Michael Fitz',
     botText: 'Album Release',
     id: 1,
@@ -125,61 +25,61 @@ export const tiles = [
       images: [
         [
           {
-            src: project1Image1,
-            width: 1160,
-            height: 899,
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_1.png',
+            width: 1170,
+            height: 828,
             alt: 'project1Image1',
           },
         ],
         [
           {
-            src: project1Image2,
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_2.png',
             width: 1160,
-            height: 655,
+            height: 645,
             alt: 'project1Image2',
           },
         ],
         [
           {
-            src: project1Image3,
-            width: 550,
-            height: 301,
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_3.png',
+            width: 1170,
+            height: 645,
             alt: 'project1Image3',
           },
           {
-            src: project1Image4,
-            width: 550,
-            height: 301,
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_4.png',
+            width: 1170,
+            height: 645,
             alt: 'project1Image4',
           },
         ],
         [
           {
-            src: project1Image5,
-            width: 550,
-            height: 301,
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_5.png',
+            width: 1179,
+            height: 645,
             alt: 'project1Image5',
           },
           {
-            src: project1Image6,
-            width: 550,
-            height: 301,
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_6.png',
+            width: 1179,
+            height: 645,
             alt: 'project1Image6',
           },
         ],
         [
           {
-            src: project1Image7,
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_7.png',
             width: 1160,
-            height: 393,
+            height: 396,
             alt: 'project1Image7',
           },
         ],
         [
           {
-            src: project1Image8,
-            width: 1160,
-            height: 899,
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_8.png',
+            width: 1170,
+            height: 972,
             alt: 'project1Image8',
           },
         ],
@@ -187,15 +87,15 @@ export const tiles = [
       title: 'Michael Fitz',
       description:
         'An Projekten für die Kunst und Kulturszene arbeiten zu dürfen, ist für mich, als Gestalterin und Musikerin, immer ein besonderes Geschenk. Der Münchner Musiker, Michael Fitz, brachte sein neues Album “Wenn I Schaug” in die Welt und ich durfte für die Agentur Grafikhaus, bei der ich damals angestellt war, das Design kreieren. Dafür durchsuchte, sortierte, kombiniert und mischte ich die gelieferten Daten, bestehend aus Ölgemälden und Fotografien aus dem Hause Fitz. Es entstand ein xx-seitiges Booklet, in dem jedes Lied eine individuell gestaltete, doppelseitige Collage erhielt - passend zum Text, Klang und Gefühl des jeweiligen Songs.',
-      secondaryMain: 'Umsetzung: ',
+      secondaryMain: 'umsetzung',
       secondaryDescription:
         'CD-Cover und Booklet   -   CD   -   Plakat   -   Notizkarten',
-      thirdMain: 'Fotografie/Gemälde: ',
-      thirdDescription: 'Michael und Karin Fitz',
+      thirdMain: 'team',
+      thirdDescription: 'Michael und Karin Fitz: Gemälde und Fotografie',
     },
   },
   {
-    imageSrc: logoGif,
+    imageSrc: tileUrl + 'Landigpage_Logos.gif',
     topText: 'Logos',
     botText: '',
     id: 2,
@@ -204,142 +104,74 @@ export const tiles = [
       images: [
         [
           {
-            src: project2Image1,
-            width: 550,
-            height: 469,
+            src: primaryUrl + projectLoc + 'Logos/Camaleon.png',
+            width: 1170,
+            height: 410,
             alt: 'project2Image1',
-          },
-          {
-            src: project2Image2,
-            width: 550,
-            height: 469,
-            alt: 'project2Image2',
           },
         ],
         [
           {
-            src: project2Image3,
-            width: 550,
-            height: 469,
+            src: primaryUrl + projectLoc + 'Logos/Conradt.png',
+            width: 1170,
+            height: 410,
             alt: 'project2Image3',
           },
-          {
-            src: project2Image4,
-            width: 550,
-            height: 469,
-            alt: 'project2Image4',
-          },
         ],
         [
           {
-            src: project2Image5,
-            width: 550,
-            height: 469,
+            src: primaryUrl + projectLoc + 'Logos/SmokeRing.png',
+            width: 1170,
+            height: 410,
             alt: 'project2Image5',
           },
-          {
-            src: project2Image6,
-            width: 550,
-            height: 469,
-            alt: 'project2Image6',
-          },
         ],
         [
           {
-            src: project2Image7,
-            width: 550,
-            height: 469,
+            src: primaryUrl + projectLoc + 'Logos/Abuell.png',
+            width: 1170,
+            height: 410,
             alt: 'project2Image7',
           },
-          {
-            src: project2Image8,
-            width: 550,
-            height: 469,
-            alt: 'project2Image8',
-          },
         ],
         [
           {
-            src: project2Image9,
-            width: 550,
-            height: 469,
+            src: primaryUrl + projectLoc + 'Logos/Gioia.png',
+            width: 1170,
+            height: 410,
             alt: 'project2Image9',
           },
-          {
-            src: project2Image10,
-            width: 550,
-            height: 469,
-            alt: 'project2Image10',
-          },
         ],
         [
           {
-            src: project2Image11,
-            width: 550,
-            height: 469,
+            src: primaryUrl + projectLoc + 'Logos/PraxisUtaSiebert.png',
+            width: 1170,
+            height: 410,
             alt: 'project2Image11',
           },
-          {
-            src: project2Image12,
-            width: 550,
-            height: 469,
-            alt: 'project2Image12',
-          },
         ],
         [
           {
-            src: project2Image13,
-            width: 550,
-            height: 469,
-            alt: 'project2Image13',
-          },
-          {
-            src: project2Image14,
-            width: 550,
-            height: 469,
-            alt: 'project2Image14',
-          },
-        ],
-        [
-          {
-            src: project2Image15,
-            width: 550,
-            height: 469,
+            src: primaryUrl + projectLoc + 'Logos/lamano.png',
+            width: 1170,
+            height: 410,
             alt: 'project2Image1',
           },
-          {
-            src: project2Image16,
-            width: 550,
-            height: 469,
-            alt: 'project2Image16',
-          },
         ],
         [
           {
-            src: project2Image17,
-            width: 550,
-            height: 469,
+            src: primaryUrl + projectLoc + 'Logos/Theresa.png',
+            width: 1170,
+            height: 410,
             alt: 'project2Image17',
           },
-          {
-            src: project2Image18,
-            width: 550,
-            height: 469,
-            alt: 'project2Image18',
-          },
         ],
         [
           {
-            src: project2Image19,
-            width: 550,
-            height: 469,
-            alt: 'project2Image19',
-          },
-          {
-            src: project2Image20,
-            width: 550,
-            height: 469,
-            alt: 'project2Image20',
+            src: primaryUrl + projectLoc + 'Logos/Heuss.png',
+            width: 1170,
+            height: 410,
+            alt: 'project2Image18',
           },
         ],
       ],
@@ -394,7 +226,7 @@ export const tiles = [
     },
   },
   {
-    imageSrc: tile3,
+    imageSrc: tileUrl + 'Landigpage_BMF.png',
     topText: 'Bing!',
     botText: 'Barbershop Musikfestival',
     id: 3,
@@ -403,97 +235,105 @@ export const tiles = [
       images: [
         [
           {
-            src: project3Image1,
-            width: 1487,
-            height: 1185,
+            src: primaryUrl + projectLoc + 'BMF/BMF_1.png',
+            width: 1170,
+            height: 788,
             alt: 'project3Image1',
           },
         ],
         [
           {
-            src: project3Image2,
-            width: 735,
-            height: 735,
+            src: primaryUrl + projectLoc + 'BMF/BMF_2.png',
+            width: 1170,
+            height: 788,
             alt: 'project3Image2',
           },
           {
-            src: project3Image3,
-            width: 735,
-            height: 735,
+            src: primaryUrl + projectLoc + 'BMF/BMF_3.png',
+            width: 1170,
+            height: 788,
             alt: 'project3Image3',
           },
         ],
         [
           {
-            src: project3Image4,
-            width: 1487,
-            height: 1057,
+            src: primaryUrl + projectLoc + 'BMF/BMF_4.png',
+            width: 1170,
+            height: 788,
             alt: 'project3Image4',
           },
         ],
         [
           {
-            src: project3Image5,
-            width: 1487,
-            height: 450,
+            src: primaryUrl + projectLoc + 'BMF/BMF_5.png',
+            width: 1170,
+            height: 702,
             alt: 'project3Image5',
           },
         ],
         [
           {
-            src: project3Image6,
-            width: 735,
-            height: 849,
+            src: primaryUrl + projectLoc + 'BMF/BMF_6.png',
+            width: 1170,
+            height: 413,
             alt: 'project3Image6',
-          },
-          {
-            src: project3Image7,
-            width: 735,
-            height: 392,
-            alt: 'project3Image7',
           },
         ],
         [
           {
-            src: project3Image8,
-            width: 1487,
-            height: 1106,
+            src: primaryUrl + projectLoc + 'BMF/BMF_7.png',
+            width: 1170,
+            height: 879,
+            alt: 'project3Image7',
+          },
+          {
+            src: primaryUrl + projectLoc + 'BMF/BMF_8.png',
+            width: 1170,
+            height: 626,
             alt: 'project3Image8',
           },
         ],
         [
           {
-            src: project3Image9,
-            width: 735,
-            height: 551,
+            src: primaryUrl + projectLoc + 'BMF/BMF_9.png',
+            width: 1170,
+            height: 702,
             alt: 'project3Image9',
-          },
-          {
-            src: project3Image10,
-            width: 735,
-            height: 1094,
-            alt: 'project3Image10',
           },
         ],
         [
           {
-            src: project3Image11,
-            width: 1178,
-            height: 878,
+            src: primaryUrl + projectLoc + 'BMF/BMF_10.png',
+            width: 1170,
+            height: 702,
+            alt: 'project3Image10',
+          },
+          {
+            src: primaryUrl + projectLoc + 'BMF/BMF_11.png',
+            width: 1170,
+            height: 966,
             alt: 'project3Image11',
           },
         ],
         [
           {
-            src: project3Image12,
-            width: 735,
-            height: 384,
+            src: primaryUrl + projectLoc + 'BMF/BMF_12.png',
+            width: 1170,
+            height: 877,
+            alt: 'project3Image12',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'BMF/BMF_13.png',
+            width: 1170,
+            height: 604,
             alt: 'project3Image12',
           },
           {
-            src: project3Image13,
-            width: 735,
-            height: 883,
+            src: primaryUrl + projectLoc + 'BMF/BMF_14.png',
+            width: 1170,
+            height: 728,
             alt: 'project3Image13',
           },
         ],
@@ -502,17 +342,18 @@ export const tiles = [
       description:
         'Alle 2 Jahre lädt BinG, der deutsche Fachverband für Barbershopgesang, zum Barbershop Musikfestival ein. Neben den Wettbewerben für Chören und Quartetten gibt es auch Shows, Afterglows und Coachings ... ein Wochenende, das gut geplant und in Szene gesetzt werden muss. Nach einer langen Pandemie-Pause hieß es 2023 endlich wieder: “We are ready for our next contestant.”\nMit einem tollen Team haben wir echt was auf die Beine gestellt! Neuer Slogan, neuer Look! Und Ensembles und Zuschauer jubelten gemeinsam: Barbershop is back!!',
       secondary: '',
-      secondaryMain: 'Umsetzung: ',
+      secondaryMain: 'umsetzung',
       secondaryDescription:
         'Programmheft   -   Webauftritt   -   Plakate   -   Flyer   -   Lanyards & Badges   -   Banner   -   Roll-ups   -   Merchandise   -   Bauchbinden',
-      thirdMain: 'Programmierung Webauftritt: ',
-      thirdDescription: 'Robbie Weber',
-      fourthMain: 'Fotografie: ',
-      fourthDescription: 'Eric Ideler',
+      thirdMain: 'credits',
+      thirdDescription:
+        'Robbie Weber: Programmierung Webseite \n Eric Ideler: Fotografie',
+      fourthMain: '',
+      fourthDescription: '',
     },
   },
   {
-    imageSrc: tile4,
+    imageSrc: tileUrl + 'Landigpage_JollyKrawchucks.png',
     topText: 'Hochzeit',
     botText: 'The Jolly Krawchucks',
     id: 4,
@@ -521,63 +362,71 @@ export const tiles = [
       images: [
         [
           {
-            src: project4Image1,
-            width: 1190,
-            height: 892,
+            src:
+              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_1.png',
+            width: 1170,
+            height: 788,
             alt: 'project4Image1',
           },
         ],
         [
           {
-            src: project4Image2,
-            width: 551,
-            height: 376,
+            src:
+              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_2.png',
+            width: 1170,
+            height: 767,
             alt: 'project4Image2',
           },
           {
-            src: project4Image3,
-            width: 551,
-            height: 376,
+            src:
+              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_3.png',
+            width: 1170,
+            height: 767,
             alt: 'project4Image3',
           },
         ],
         [
           {
-            src: project4Image4,
-            width: 1166,
-            height: 896,
+            src:
+              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_4.png',
+            width: 1170,
+            height: 788,
             alt: 'project4Image4',
           },
         ],
         [
           {
-            src: project4Image5,
-            width: 1174,
-            height: 664,
+            src:
+              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_5.png',
+            width: 1170,
+            height: 615,
             alt: 'project4Image5',
           },
         ],
         [
           {
-            src: project4Image6,
-            width: 1174,
-            height: 660,
+            src:
+              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_6.png',
+            width: 1170,
+            height: 653,
             alt: 'project4Image6',
           },
         ],
         [
           {
-            src: project4Image7,
-            width: 882,
-            height: 949,
+            src:
+              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_7.png',
+            width: 1170,
+            height: 1452,
             alt: 'project4Image7',
           },
         ],
         [
           {
-            src: project4Image8,
-            width: 1158,
-            height: 927,
+            src:
+              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_8.png',
+            width: 1170,
+            height: 1160,
             alt: 'project4Image8',
           },
         ],
@@ -585,20 +434,20 @@ export const tiles = [
       title: 'The Jolly Krawchucks',
       description:
         'Willow & Gareth wussten genau, welchen Vibe ihr besondere Tag haben sollte. Ich durfte mit der Gestaltung der Printsachen ein kein wenig helfen, ihre Vision zum Leben zu erwecken. Mit viel Liebe zum Detail kreierten die beiden ein Hochzeitswochenende, dass den Gästen noch lange in Erinnerung bleiben wird.',
-      secondaryMain: 'Umsetzung: ',
+      secondaryMain: 'umsetzung',
       secondaryDescription:
         'Einladung  -   RSVP Karten  -   Platzkarten   -   Menü   -   Infoflyer   -   Hochzeitsandenken',
     },
   },
   {
-    imageSrc: portfolio,
+    imageSrc: tileUrl + 'group_3.png',
     topText: '',
     botText: '',
     id: 11,
     shouldHover: false,
   },
   {
-    imageSrc: tile5,
+    imageSrc: tileUrl + 'Landigpage_FischkoppBazi.png',
     topText: 'Hochzeit',
     botText: 'Fischkopp & Bazi',
     id: 5,
@@ -607,49 +456,55 @@ export const tiles = [
       images: [
         [
           {
-            src: project6Image1,
-            width: 1124,
-            height: 772,
+            src:
+              primaryUrl + projectLoc + 'Fischkopp&Bazi/FischkoppundBazi_1.png',
+            width: 1170,
+            height: 788,
             alt: 'project6Image1',
           },
         ],
         [
           {
-            src: project6Image2,
-            width: 1124,
-            height: 656,
+            src:
+              primaryUrl + projectLoc + 'Fischkopp&Bazi/FischkoppundBazi_2.png',
+            width: 1170,
+            height: 684,
             alt: 'project6Image2',
           },
         ],
         [
           {
-            src: project6Image3,
-            width: 1124,
-            height: 843,
+            src:
+              primaryUrl + projectLoc + 'Fischkopp&Bazi/FischkoppundBazi_3.png',
+            width: 1170,
+            height: 753,
             alt: 'project6Image3',
           },
         ],
         [
           {
-            src: project6Image4,
-            width: 1124,
-            height: 843,
+            src:
+              primaryUrl + projectLoc + 'Fischkopp&Bazi/FischkoppundBazi_4.png',
+            width: 1170,
+            height: 788,
             alt: 'project6Image4',
           },
         ],
         [
           {
-            src: project6Image5,
-            width: 1124,
-            height: 1050,
+            src:
+              primaryUrl + projectLoc + 'Fischkopp&Bazi/FischkoppundBazi_5.png',
+            width: 1170,
+            height: 811,
             alt: 'project6Image5',
           },
         ],
         [
           {
-            src: project6Image6,
-            width: 1124,
-            height: 1050,
+            src:
+              primaryUrl + projectLoc + 'Fischkopp&Bazi/FischkoppundBazi_6.png',
+            width: 1170,
+            height: 753,
             alt: 'project6Image6',
           },
         ],
@@ -657,13 +512,13 @@ export const tiles = [
       title: 'Fischkopp & Bazi',
       description:
         'Sie aus dem hohen Norden, er aus dem tiefen Süden. Verbunden durch die Liebe zur Barbershop-Musik.',
-      secondaryMain: 'Umsetzung: ',
+      secondaryMain: 'umsetzung',
       secondaryDescription:
         'Einladung  -   RSVP Karten   -   Menü   -   Dankeskarten',
     },
   },
   {
-    imageSrc: tile6,
+    imageSrc: tileUrl + 'Landigpage_Buchcover.png',
     topText: 'Buchcover',
     botText: '',
     id: 6,
@@ -672,44 +527,44 @@ export const tiles = [
       images: [
         [
           {
-            src: project5Image1,
-            width: 555,
-            height: 504,
-            alt: 'project5Image1',
+            src: primaryUrl + projectLoc + 'Buchcover/Buchcover_1.png',
+            width: 770,
+            height: 712,
+            alt: 'project6Image1',
           },
           {
-            src: project5Image2,
-            width: 555,
-            height: 504,
-            alt: 'project5Image2',
-          },
-        ],
-        [
-          {
-            src: project5Image3,
-            width: 555,
-            height: 504,
-            alt: 'project5Image3',
-          },
-          {
-            src: project5Image4,
-            width: 555,
-            height: 504,
-            alt: 'project5Image4',
+            src: primaryUrl + projectLoc + 'Buchcover/Buchcover_2.png',
+            width: 770,
+            height: 712,
+            alt: 'project6Image2',
           },
         ],
         [
           {
-            src: project5Image5,
-            width: 555,
-            height: 504,
-            alt: 'project5Image5',
+            src: primaryUrl + projectLoc + 'Buchcover/Buchcover_3.png',
+            width: 770,
+            height: 712,
+            alt: 'project6Image3',
           },
           {
-            src: project5Image6,
-            width: 555,
-            height: 504,
-            alt: 'project5Image6',
+            src: primaryUrl + projectLoc + 'Buchcover/Buchcover_4.png',
+            width: 770,
+            height: 712,
+            alt: 'project6Image4',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Buchcover/Buchcover_5.png',
+            width: 770,
+            height: 712,
+            alt: 'project6Image5',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Buchcover/Buchcover_6.png',
+            width: 770,
+            height: 712,
+            alt: 'project6Image6',
           },
         ],
       ],
@@ -720,7 +575,7 @@ export const tiles = [
     },
   },
   {
-    imageSrc: tile7,
+    imageSrc: tileUrl + 'Landigpage_Herzensangelegenheiten.png',
     topText: 'Herzenangelegenheiten',
     botText: '',
     id: 7,
@@ -729,31 +584,43 @@ export const tiles = [
       images: [
         [
           {
-            src: project7Image1,
-            width: 555,
-            height: 452,
+            src:
+              primaryUrl +
+              projectLoc +
+              'Herzensangelegenheiten/Kinderliederbuch_1.png',
+            width: 1170,
+            height: 983,
             alt: 'project7Image1',
           },
           {
-            src: project7Image2,
-            width: 555,
-            height: 452,
+            src:
+              primaryUrl +
+              projectLoc +
+              'Herzensangelegenheiten/Kinderliederbuch_2.png',
+            width: 1170,
+            height: 783,
             alt: 'project7Image2',
           },
         ],
         [
           {
-            src: project7Image3,
-            width: 1160,
-            height: 872,
+            src:
+              primaryUrl +
+              projectLoc +
+              'Herzensangelegenheiten/Kinderliederbuch_3.png',
+            width: 1170,
+            height: 783,
             alt: 'project7Image3',
           },
         ],
         [
           {
-            src: project7Image4,
-            width: 1148,
-            height: 826,
+            src:
+              primaryUrl +
+              projectLoc +
+              'Herzensangelegenheiten/Kinderliederbuch_4.png',
+            width: 1170,
+            height: 783,
             alt: 'project7Image4',
           },
         ],
@@ -763,11 +630,9 @@ export const tiles = [
         'Manche Projekte sind Herzensprojekte. Ich finde, auch die dürfen gezeigt werden.',
       secondary:
         'Zum Beispiel dieses einzigartige Geschenk für eine Freundin ihr zweites Kind erwartete. Gemeinsam mit einer Gruppe kreativer Freunde erstellten wir dieses Kinderliederbuch der anderen Art. Die ausgewählten Kinderlieder sind alt bekannt. Was besonders ist: Passend zum Buch gibt es auch eine CD! Wir haben die Lieder selbst eingesungen bzw. eingespielt. Dazu noch ein paar Bilder gemalt und schwups - war das 22-seitige Liederbuch fertig!',
-      third:
-        'Oder die Zeitscheine, die wir meinem Papa zum 60sten geschenkt haben. Mit den Scheinen konnte er sich auserwählte Aktivitäten mit uns “kaufen”. Eisstockschießen, Städtetrip, Spieleabend... Gemeinsam Zeit verbringen.\nThats real value!',
-      secondaryMain: 'Umsetzung: ',
+      secondaryMain: 'umsetzung',
       secondaryDescription: 'Liederbuch  -   CD',
-      thirdMain: 'Mitwirkende: ',
+      thirdMain: 'team',
       thirdDescription: 'Nina, Domi, Anna, Gabriele, Ramon',
     },
     secondPage: {
@@ -797,12 +662,12 @@ export const tiles = [
       ],
       title: '',
       description:
-        'Oder die Zeitscheine, die wir meinem Papa zum 60sten geschenkt haben. Mit den Scheinen konnte er sich auserwählte Aktivitäten mit uns “kaufen”. Eisstockschießen, Städtetrip, Spieleabend... Gemeinsam Zeit verbringen.\nThats real value!',
+        "Oder die Zeitscheine, die wir meinem Papa zum 60sten geschenkt haben. Mit den Scheinen konnte er sich auserwählte Aktivitäten mit uns “kaufen”. Eisstockschießen, Städtetrip, Spieleabend... Gemeinsam Zeit verbringen.\nThat's real value!",
       secondary: '',
     },
   },
   {
-    imageSrc: tile8,
+    imageSrc: tileUrl + 'Landigpage_PraxisUtaSiebert.png',
     topText: 'Uta Sibert',
     botText: '',
     id: 8,
@@ -811,82 +676,106 @@ export const tiles = [
       images: [
         [
           {
-            src: project8Image1,
-            width: 558,
-            height: 418,
+            src:
+              primaryUrl +
+              projectLoc +
+              'PraxisUtaSiebert/PraxisUtaSiebert_1.png',
+            width: 1170,
+            height: 788,
             alt: 'project8Image1',
           },
           {
-            src: project8Image2,
-            width: 560,
-            height: 417,
+            src:
+              primaryUrl +
+              projectLoc +
+              'PraxisUtaSiebert/PraxisUtaSiebert_2.png',
+            width: 1170,
+            height: 788,
             alt: 'project8Image2',
           },
         ],
         [
           {
-            src: project8Image3,
-            width: 1186,
-            height: 1204,
+            src:
+              primaryUrl +
+              projectLoc +
+              'PraxisUtaSiebert/PraxisUtaSiebert_3.png',
+            width: 1170,
+            height: 1263,
             alt: 'project8Image3',
           },
         ],
         [
           {
-            src: project8Image4,
-            width: 563,
-            height: 504,
+            src:
+              primaryUrl +
+              projectLoc +
+              'PraxisUtaSiebert/PraxisUtaSiebert_4.png',
+            width: 1170,
+            height: 819,
             alt: 'project8Image4',
           },
           {
-            src: project8Image5,
-            width: 555,
-            height: 504,
+            src:
+              primaryUrl +
+              projectLoc +
+              'PraxisUtaSiebert/PraxisUtaSiebert_5.png',
+            width: 1170,
+            height: 819,
             alt: 'project8Image5',
           },
         ],
         [
           {
-            src: project8Image6,
+            src:
+              primaryUrl +
+              projectLoc +
+              'PraxisUtaSiebert/PraxisUtaSiebert_6.png',
             width: 1186,
-            height: 504,
+            height: 683,
             alt: 'project8Image6',
           },
         ],
         [
           {
-            src: project8Image7,
-            width: 593,
-            height: 542,
+            src:
+              primaryUrl +
+              projectLoc +
+              'PraxisUtaSiebert/PraxisUtaSiebert_7.png',
+            width: 1170,
+            height: 445,
             alt: 'project8Image7',
           },
+        ],
+        [
           {
-            src: project8Image8,
-            width: 510,
-            height: 468,
+            src:
+              primaryUrl +
+              projectLoc +
+              'PraxisUtaSiebert/PraxisUtaSiebert_8.png',
+            width: 1170,
+            height: 695,
             alt: 'project8Image8',
           },
         ],
         [
           {
-            src: project8Image9,
-            width: 1180,
-            height: 884,
+            src:
+              primaryUrl +
+              projectLoc +
+              'PraxisUtaSiebert/PraxisUtaSiebert_9.png',
+            width: 1170,
+            height: 855,
             alt: 'project8Image9',
           },
-        ],
-        [
           {
-            src: project8Image10,
-            width: 553,
-            height: 419,
+            src:
+              primaryUrl +
+              projectLoc +
+              'PraxisUtaSiebert/PraxisUtaSiebert_10.png',
+            width: 1170,
+            height: 835,
             alt: 'project8Image10',
-          },
-          {
-            src: project8Image11,
-            width: 555,
-            height: 419,
-            alt: 'project8Image11',
           },
         ],
       ],
@@ -894,13 +783,13 @@ export const tiles = [
       description:
         'Für die Privatpraxis der Psychotherapie von Uta Siebert im Zentrum Münchens habe ich das bestehende CI überarbeitet und erweitert. Ein besonderes Angebot der Praxis: Die Mutter-Kind-Bindungsanalyse.Für diesen Teilbereich entwickelte ich ein optisches Konzept, welches sich harmonisch in das Gestaltungskonzept der Praxis integriert. Mit einem Logo für “die Bindungsanalytikerin”, einem angepassten Farbkonzept und passenden Webauftritt, entsteht somit ein Raum rund um die Themen Frauen, Schwangerschaft und gesunden Babies.',
       secondary: '',
-      secondaryMain: 'Umsetzung: ',
+      secondaryMain: 'umsetzung',
       secondaryDescription:
         'Logo  -   Geschäftsausstattung   -   Beschilderung   -   Flyer   -   Webauftritt',
     },
   },
   {
-    imageSrc: tile9,
+    imageSrc: tileUrl + 'Landigpage_Animation.png',
     topText: 'Animation',
     botText: '',
     id: 9,
@@ -909,7 +798,7 @@ export const tiles = [
       images: [],
       videos: [
         'https://www.youtube.com/embed/x383taAa3S4?si=Zbx39ZatsOYdIhbs',
-        'https://www.youtube.com/embed/x383taAa3S4?si=Zbx39ZatsOYdIhbs',
+        'https://www.youtube.com/embed/-wBFkshvX9w?si=u-6sZ7E-no5efDlB',
       ],
       title: 'Animation',
       description:
@@ -917,13 +806,13 @@ export const tiles = [
       secondary:
         'Hier zwei Beispiele von schlichter, animierter Weihnachtspost, ohne viel Tamtam.',
       secondVideo: [
-        'https://www.youtube.com/embed/_Wro0ZFy9zk?si=H5uUhvYHPRYfnnBd',
+        'https://www.youtube.com/embed/2rX_MLJ6h0w?si=JEWzr0H5c9WOEiLf',
       ],
       secondMain: 'Ein Logo zum Leben erwecken? Klar!',
     },
   },
   {
-    imageSrc: tile10,
+    imageSrc: tileUrl + 'Landigpage_Robbie&Mira.png',
     topText: 'Hochzeit',
     botText: 'Robbie & Mira',
     id: 10,
@@ -932,47 +821,49 @@ export const tiles = [
       images: [
         [
           {
-            src: project9Image1,
-            width: 1154,
-            height: 973,
+            src: primaryUrl + projectLoc + 'Robbie&Mira/RobbieandMira_1.png',
+            width: 1170,
+            height: 1005,
             alt: 'project9Image1',
           },
         ],
         [
           {
-            src: project9Image2,
-            width: 1154,
-            height: 865,
+            src: primaryUrl + projectLoc + 'Robbie&Mira/RobbieandMira_2.png',
+            width: 1170,
+            height: 883,
             alt: 'project9Image2',
           },
         ],
         [
           {
-            src: project9Image3,
-            width: 1154,
-            height: 690,
+            src: primaryUrl + projectLoc + 'Robbie&Mira/RobbieandMira_3.png',
+            width: 1170,
+            height: 701,
             alt: 'project9Image3',
           },
         ],
         [
           {
-            src: project9Image4,
-            width: 551,
-            height: 377,
+            src: primaryUrl + projectLoc + 'Robbie&Mira/RobbieandMira_4.png',
+            width: 1170,
+            height: 900,
             alt: 'project9Image4',
           },
+        ],
+        [
           {
-            src: project9Image5,
-            width: 551,
-            height: 377,
+            src: primaryUrl + projectLoc + 'Robbie&Mira/RobbieandMira_5.png',
+            width: 1170,
+            height: 788,
             alt: 'project9Image5',
           },
         ],
         [
           {
-            src: project9Image6,
-            width: 1154,
-            height: 865,
+            src: primaryUrl + projectLoc + 'Robbie&Mira/RobbieandMira_6.png',
+            width: 1170,
+            height: 788,
             alt: 'project9Image6',
           },
         ],
@@ -980,9 +871,11 @@ export const tiles = [
       title: 'Robbie & Mira',
       description:
         'Und wenn sich die Berufsbilder so wunderbar ergänzen, kann man die Hochzeitswebpage gemeinsam erstellen. Teamwork makes the dream work. Genial!',
-      secondaryMain: 'Umsetzung: ',
+      secondaryMain: 'umsetzung',
       secondaryDescription:
         'Einladung  -   Infoflyer   -   Webauftritt   -   Dankeskarten',
+      thirdMain: 'team',
+      thirdDescription: 'Robbie Weber: Programmierung Webseite',
     },
   },
 ];

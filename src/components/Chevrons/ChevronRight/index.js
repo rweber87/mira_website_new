@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useProjectId from '../../../hooks/projectId';
 import usePageNavigation from '../../../hooks/hasNextPreviousPage';
@@ -8,14 +8,17 @@ import { tiles } from '../../Portfolio/tiles';
 import './styles.scss';
 
 export default function ChevronRight(props) {
+  const [strokeWidth, setStrokeWidth] = useState(0.25);
   const pages = tiles.filter((tile) => tile.shouldHover);
   const projectId = useProjectId();
-  const { hasNext, nextId } = usePageNavigation(pages, projectId);
+  const { firstId, hasNext, nextId } = usePageNavigation(pages, projectId);
 
   return (
     <Link
-      className={`right ${hasNext ? '' : 'hide'}`}
-      to={`/portfolio/${nextId}`}
+      className='right'
+      to={`/portfolio/${hasNext ? nextId : firstId}`}
+      onMouseEnter={() => setStrokeWidth(0.75)}
+      onMouseLeave={() => setStrokeWidth(0.25)}
     >
       <button className='chevron-icon'>
         <svg
@@ -25,7 +28,7 @@ export default function ChevronRight(props) {
           role='img'
           aria-labelledby='chevronRightIconTitle'
           stroke='#CA5541'
-          strokeWidth={0.25}
+          strokeWidth={strokeWidth}
           strokeLinecap='square'
           strokeLinejoin='miter'
           fill='none'

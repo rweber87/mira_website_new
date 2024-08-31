@@ -9,15 +9,24 @@ export default function Footer() {
         <div className='footer__text_wrapper'>
           <div className='footer__column'>
             <div className='lets_connect'>Let's Connect</div>
+            <div className='text'>
+              <a
+                href='mailto:hallo@mirataferner.com'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-footer-link'
+              >
+                hallo@mirataferner.com
+              </a>
+            </div>
+            <div className='text'>
+              <a href='tel:+4917655285294' className='text-footer-link'>
+                +49 176 552 852 94
+              </a>
+            </div>
           </div>
           <div className='footer__column'>
-            <div className='text'>hello@mirataferner.com</div>
-          </div>
-          <div className='footer__column'>
-            <div className='text'>+49 176 552 852 94</div>
-          </div>
-          <div className='footer__column'>
-            <Link to='/impressum-datunschutz' className='text-link'>
+            <Link to='/impressum-datunschutz' className='text-link impressum'>
               Impressum & Datenshutz
             </Link>
           </div>

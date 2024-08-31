@@ -13,7 +13,9 @@ export default function ProjectLogoGrid({ companyInfo, imageGroups }) {
     <div className='image-grid-logo'>
       {imageGroups.map((group, index, groups) => (
         <div key={`${companyInfo.name}-${index}`}>
-          <ProjectImageRow images={group} />
+          <div className='image-grid-logo__row-wrapper'>
+            <ProjectImageRow images={group} />
+          </div>
           <div className='image-grid-logo__text-wrapper'>
             <div className='name'>{companyInfo[index].name}</div>
             <div className='description'>{companyInfo[index].description}</div>
