@@ -96,7 +96,11 @@ $underline: #ca5541;
       flex-direction: row;
       justify-content: space-between;
       padding-right: 4rem;
-      line-height: 20px;
+      align-items: self-end;
+
+      @media (max-width: 768px) {
+        align-items: normal;
+      }
 
       .impressum {
         color: white;

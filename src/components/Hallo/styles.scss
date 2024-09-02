@@ -6,6 +6,14 @@
   font-family: 'Raleway', sans-serif;
   max-width: 1170px;
 
+  @media (max-width: 1200px) {
+    max-width: 760px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 356px;
+  }
+
   &__text {
     margin: 0rem 8rem 0rem 0rem;
     display: flex;
@@ -49,7 +57,7 @@
     flex: 0 1 66.67%;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     flex-wrap: wrap;
 
@@ -70,6 +78,10 @@
   font-weight: 100;
   line-height: 25px;
   font-family: 'Raleway', sans-serif;
+
+  @media (max-width: 768px) {
+    max-width: 356px;
+  }
 
   .section {
     padding-bottom: 2em;

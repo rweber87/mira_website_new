@@ -12,7 +12,10 @@ export default function ProjectLogoGrid({ companyInfo, imageGroups }) {
   return (
     <div className='image-grid-logo'>
       {imageGroups.map((group, index, groups) => (
-        <div key={`${companyInfo.name}-${index}`}>
+        <div
+          className='image-grid-row-wrapper'
+          key={`${companyInfo.name}-${index}`}
+        >
           <div className='image-grid-logo__row-wrapper'>
             <ProjectImageRow images={group} />
           </div>

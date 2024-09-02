@@ -1,5 +1,14 @@
 .youtube-list {
+  max-width: 1170px;
   width: 100%;
+
+  @media (max-width: 1200px) {
+    max-width: 760px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 356px;
+  }
 
   &__item {
     overflow: hidden;

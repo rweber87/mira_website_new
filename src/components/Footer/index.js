@@ -7,7 +7,7 @@ export default function Footer() {
   const [newContact, setNewContact] = useState(false);
   useWindowSize((newSize) => {
     const { width } = newSize;
-    if (width < 1110 && width > 769) {
+    if (width < 1202 && width > 769) {
       setNewContact(true);
     } else {
       setNewContact(false);

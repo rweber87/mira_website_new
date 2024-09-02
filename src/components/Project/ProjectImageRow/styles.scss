@@ -4,9 +4,14 @@
   margin-left: auto;
 
   @media (max-width: 1220px) {
-    padding: 0rem 2rem;
+    padding: 2rem 0rem;
   }
-  @media (max-width: 767px) {
-    padding: 0rem 2rem;
+
+  @media (max-width: 1200px) {
+    max-width: 760px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 356px;
   }
 }
