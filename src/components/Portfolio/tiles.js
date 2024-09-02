@@ -1,7 +1,3 @@
-import project7Image5 from '../../assets/project_7_images/Picture 5.png';
-import project7Image6 from '../../assets/project_7_images/Picture 6.png';
-import project7Image7 from '../../assets/project_7_images/Picture 7.png';
-
 const primaryUrl = 'https://mira-website-new.s3.amazonaws.com/';
 const tileLoc = 'tile-images/';
 const projectLoc = 'projects/';
@@ -105,7 +101,13 @@ export const tiles = [
         [
           {
             src: primaryUrl + projectLoc + 'Logos/Camaleon.png',
-            width: 1170,
+            width: 585,
+            height: 410,
+            alt: 'project2Image1',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Logos/Camaleon_2.png',
+            width: 585,
             height: 410,
             alt: 'project2Image1',
           },
@@ -113,7 +115,13 @@ export const tiles = [
         [
           {
             src: primaryUrl + projectLoc + 'Logos/Conradt.png',
-            width: 1170,
+            width: 585,
+            height: 410,
+            alt: 'project2Image3',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Logos/Conradt_2.png',
+            width: 585,
             height: 410,
             alt: 'project2Image3',
           },
@@ -121,7 +129,13 @@ export const tiles = [
         [
           {
             src: primaryUrl + projectLoc + 'Logos/SmokeRing.png',
-            width: 1170,
+            width: 585,
+            height: 410,
+            alt: 'project2Image5',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Logos/SmokeRing_2.png',
+            width: 585,
             height: 410,
             alt: 'project2Image5',
           },
@@ -129,7 +143,13 @@ export const tiles = [
         [
           {
             src: primaryUrl + projectLoc + 'Logos/Abuell.png',
-            width: 1170,
+            width: 585,
+            height: 410,
+            alt: 'project2Image7',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Logos/Abuell_2.png',
+            width: 585,
             height: 410,
             alt: 'project2Image7',
           },
@@ -137,7 +157,13 @@ export const tiles = [
         [
           {
             src: primaryUrl + projectLoc + 'Logos/Gioia.png',
-            width: 1170,
+            width: 585,
+            height: 410,
+            alt: 'project2Image9',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Logos/Gioia_2.png',
+            width: 585,
             height: 410,
             alt: 'project2Image9',
           },
@@ -145,7 +171,13 @@ export const tiles = [
         [
           {
             src: primaryUrl + projectLoc + 'Logos/PraxisUtaSiebert.png',
-            width: 1170,
+            width: 585,
+            height: 410,
+            alt: 'project2Image11',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Logos/PraxisUtaSiebert_2.png',
+            width: 585,
             height: 410,
             alt: 'project2Image11',
           },
@@ -153,7 +185,13 @@ export const tiles = [
         [
           {
             src: primaryUrl + projectLoc + 'Logos/lamano.png',
-            width: 1170,
+            width: 585,
+            height: 410,
+            alt: 'project2Image1',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Logos/lamano_2.png',
+            width: 585,
             height: 410,
             alt: 'project2Image1',
           },
@@ -161,7 +199,13 @@ export const tiles = [
         [
           {
             src: primaryUrl + projectLoc + 'Logos/Theresa.png',
-            width: 1170,
+            width: 585,
+            height: 410,
+            alt: 'project2Image17',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Logos/Theresa_2.png',
+            width: 585,
             height: 410,
             alt: 'project2Image17',
           },
@@ -169,7 +213,13 @@ export const tiles = [
         [
           {
             src: primaryUrl + projectLoc + 'Logos/Heuss.png',
-            width: 1170,
+            width: 585,
+            height: 410,
+            alt: 'project2Image18',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Logos/Heuss_2.png',
+            width: 585,
             height: 410,
             alt: 'project2Image18',
           },
@@ -639,24 +689,24 @@ export const tiles = [
       images: [
         [
           {
-            src: project7Image5,
-            width: 1148,
-            height: 908,
+            src:
+              primaryUrl +
+              projectLoc +
+              'Herzensangelegenheiten/Zeitscheine_1.png',
+            width: 1170,
+            height: 996,
             alt: 'project7Image5',
           },
         ],
         [
           {
-            src: project7Image6,
-            width: 543,
-            height: 420,
+            src:
+              primaryUrl +
+              projectLoc +
+              'Herzensangelegenheiten/Zeitscheine_2.png',
+            width: 1170,
+            height: 625,
             alt: 'project7Image6',
-          },
-          {
-            src: project7Image7,
-            width: 543,
-            height: 420,
-            alt: 'project7Image7',
           },
         ],
       ],
