@@ -33,7 +33,7 @@ export default function Hallo() {
           <div className='section lust-text'>
             <div>Lust mit mir über ein Projekt zu sprechen? Reach out!</div>
           </div>
-          <div className='section'>
+          <div className='section info-text'>
             <div>hallo@mirataferner.com</div>
             <div>+49 176 552 852 94</div>
           </div>
@@ -72,11 +72,11 @@ export default function Hallo() {
       </div>
       <div className='about-me-section'>
         <div className='section header'>Über mich</div>
-        <div className='section'>
+        <div className='section info-text'>
           Hier schreibe ich noch etwas über mich. Text in Arbeit.
         </div>
         <div className='header list'>Was ich anbiete</div>
-        <ul>
+        <ul className='info-text'>
           {canDo.map((c, idx) => (
             <li key={`can-do-${idx}`}>{c}</li>
           ))}

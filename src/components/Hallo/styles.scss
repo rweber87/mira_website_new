@@ -16,8 +16,8 @@
     flex: 0 1 33.33%;
 
     .lust-text {
-      color: #d9ebbe;
-      font-weight: 700;
+      color: #c2d2a8;
+      font-weight: 600;
     }
 
     .section {
@@ -81,7 +81,11 @@
 
   .header {
     margin-bottom: -1em;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 2em;
   }
+}
+
+.info-text {
+  font-weight: 400;
 }

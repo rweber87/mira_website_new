@@ -43,7 +43,7 @@ export default function Impressum() {
           </div>
         </div>
       </div>
-      <div className='section-wrapper'>
+      <>
         <div className='section-header'>Zugriffsdaten</div>
         <div className='section-text-section'>
           <div className='section-text'>
@@ -69,7 +69,7 @@ export default function Impressum() {
             von der Löschung ausgenommen bis der Vorfall endgültig geklärt ist.
           </div>
         </div>
-      </div>
+      </>
     </div>
   );
 }

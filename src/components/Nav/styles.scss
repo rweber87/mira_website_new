@@ -1,5 +1,4 @@
 $mainGreen: #688563;
-$activeGreen: #d9ebbe;
 $background: white;
 $underline: #ca5541;
 
@@ -36,7 +35,7 @@ $underline: #ca5541;
   .first_name {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 300;
   }
 
   &__name {
@@ -49,69 +48,36 @@ $underline: #ca5541;
     transform: rotate(1deg);
     bottom: -77px !important;
     position: absolute;
-    left: -0.5rem;
 
     &.active {
       color: white;
     }
 
-    @media (min-width: 1851px) and (max-width: 2000px) {
-      left: -2.5rem;
-    }
-
-    @media (min-width: 1700px) and (max-width: 1850px) {
-      left: -2rem;
-    }
-
-    @media (min-width: 1599px) and (max-width: 1699px) {
-      left: -1.5rem;
-    }
-
-    @media (min-width: 1220px) and (max-width: 1598px) {
-      left: -1rem;
-    }
-
-    @media (min-width: 1180px) and (max-width: 1219px) {
-      padding-left: 4rem;
-    }
-
-    @media (min-width: 768px) and (max-width: 1180px) {
-      padding-left: 2.5rem;
-    }
-
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       bottom: -50px;
-      left: 1rem;
+      left: calc(50% - 178px + (100vw - 110vw) / 2);
+    }
+
+    @media (min-width: 1201px) {
+      left: calc(50% - 582px + (100vw - 110vw) / 2);
+    }
+
+    @media (min-width: 769px) and (max-width: 1201px) {
+      left: calc(50% - 379px + (100vw - 110vw) / 2);
     }
   }
 
   &__wrapper {
     position: absolute;
     transform: rotate(1deg);
-    right: 8rem;
+    bottom: -23px;
 
-    @media (min-width: 1851px) and (max-width: 2000px) {
-      right: 9.5rem;
+    @media (min-width: 1201px) {
+      left: calc(50% - (-1 * 400px) + (100vw - 110vw) / 2);
     }
 
-    @media (min-width: 1701px) and (max-width: 1850px) {
-      right: 9rem;
-    }
-
-    @media (min-width: 1550px) and (max-width: 1700px) {
-      right: 8.5rem;
-    }
-
-    @media (min-width: 1201px) and (max-width: 1300px) {
-      right: 7.5rem;
-    }
-
-    @media (min-width: 1101px) and (max-width: 1200px) {
-      right: 10rem;
-    }
-
-    @media (min-width: 990px) and (max-width: 1100px) {
-      right: 9rem;
+    @media (max-width: 1201px) {
+      left: calc(50% - (-1 * 200px) + (100vw - 110vw) / 2);
     }
   }
 
@@ -134,7 +100,7 @@ $underline: #ca5541;
       text-decoration: none;
       text-align: center;
       font-size: 1rem;
-      font-weight: 500;
+      font-weight: 400;
       position: relative;
       display: inline-block;
 
@@ -147,7 +113,7 @@ $underline: #ca5541;
       }
 
       &:hover {
-        opacity: 0.5;
+        opacity: 0.75;
       }
     }
   }

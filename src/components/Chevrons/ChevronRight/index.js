@@ -17,7 +17,7 @@ export default function ChevronRight(props) {
     <Link
       className='right'
       to={`/portfolio/${hasNext ? nextId : firstId}`}
-      onMouseEnter={() => setStrokeWidth(0.75)}
+      onMouseEnter={() => setStrokeWidth(0.5)}
       onMouseLeave={() => setStrokeWidth(0.25)}
     >
       <button className='chevron-icon'>

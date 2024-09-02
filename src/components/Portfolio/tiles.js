@@ -34,7 +34,7 @@ export const tiles = [
         [
           {
             src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_2.png',
-            width: 1160,
+            width: 1170,
             height: 645,
             alt: 'project1Image2',
           },
@@ -56,13 +56,13 @@ export const tiles = [
         [
           {
             src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_5.png',
-            width: 1179,
+            width: 1170,
             height: 645,
             alt: 'project1Image5',
           },
           {
             src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_6.png',
-            width: 1179,
+            width: 1170,
             height: 645,
             alt: 'project1Image6',
           },
@@ -70,7 +70,7 @@ export const tiles = [
         [
           {
             src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_7.png',
-            width: 1160,
+            width: 1170,
             height: 396,
             alt: 'project1Image7',
           },
@@ -668,7 +668,7 @@ export const tiles = [
   },
   {
     imageSrc: tileUrl + 'Landigpage_PraxisUtaSiebert.png',
-    topText: 'Uta Sibert',
+    topText: 'Praxis Uta Siebert',
     botText: '',
     id: 8,
     shouldHover: true,
@@ -779,7 +779,7 @@ export const tiles = [
           },
         ],
       ],
-      title: 'Uta Sibert',
+      title: 'Praxis Uta Siebert',
       description:
         'Für die Privatpraxis der Psychotherapie von Uta Siebert im Zentrum Münchens habe ich das bestehende CI überarbeitet und erweitert. Ein besonderes Angebot der Praxis: Die Mutter-Kind-Bindungsanalyse.Für diesen Teilbereich entwickelte ich ein optisches Konzept, welches sich harmonisch in das Gestaltungskonzept der Praxis integriert. Mit einem Logo für “die Bindungsanalytikerin”, einem angepassten Farbkonzept und passenden Webauftritt, entsteht somit ein Raum rund um die Themen Frauen, Schwangerschaft und gesunden Babies.',
       secondary: '',

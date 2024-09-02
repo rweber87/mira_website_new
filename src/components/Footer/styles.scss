@@ -1,5 +1,5 @@
 $mainGreen: #688563;
-$background: #d9ebbe;
+$background: #c2d2a8;
 $fontColor: #979797;
 $underline: #ca5541;
 
@@ -28,6 +28,10 @@ $underline: #ca5541;
     padding: 5rem 2rem 3rem 2rem;
     background-color: $background;
     transform: skewY(-1deg);
+    @media (max-width: 768px) {
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+    }
   }
 
   .footer__text_wrapper {
@@ -44,13 +48,32 @@ $underline: #ca5541;
 
     .text {
       .text-footer-link {
-        font-weight: 800;
+        font-weight: 600;
+        letter-spacing: 0.5px;
         text-decoration: none;
         color: white;
       }
     }
 
-    @media (max-width: 767px) {
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+      .text:first-of-type {
+        padding-bottom: 2rem;
+      }
+
+      .text {
+        .text-footer-link {
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
       flex-direction: column;
 
       > * {
@@ -61,9 +84,10 @@ $underline: #ca5541;
     .footer__column:first-of-type {
       width: 50vw;
       font-weight: 300;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         width: auto;
         height: 15vh;
+        margin-bottom: 5em;
       }
     }
 
@@ -88,8 +112,8 @@ $underline: #ca5541;
         color: $fontColor;
       }
 
-      @media (max-width: 767px) {
-        margin-bottom: 1rem;
+      @media (max-width: 768px) {
+        margin-bottom: 0.5rem;
         flex-direction: column;
       }
     }

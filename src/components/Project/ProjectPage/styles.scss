@@ -10,6 +10,10 @@
     color: #979797;
     padding-bottom: 5rem;
 
+    @media (max-width: 415px) {
+      max-width: 350px;
+    }
+
     .title {
       font-size: 2rem;
       padding-bottom: 2rem;

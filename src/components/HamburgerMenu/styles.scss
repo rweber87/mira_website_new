@@ -13,28 +13,12 @@ $orange: #ca5541;
     z-index: 1201;
     right: -80vw;
 
-    @media (max-width: 768px) {
-      right: -43.5rem;
+    @media (min-width: 600px) and (max-width: 768px) {
+      left: calc(50% - (-1 * 171px) + (100vw - 110vw) / 2);
     }
 
-    @media (min-width: 720px) and (max-width: 750px) {
-      right: -41.5rem;
-    }
-
-    @media (min-width: 695px) and (max-width: 719px) {
-      right: -40.5rem;
-    }
-
-    @media (min-width: 685px) and (max-width: 694px) {
-      right: -39.5rem;
-    }
-
-    @media (min-width: 675px) and (max-width: 684px) {
-      right: -90vw;
-    }
-
-    @media (max-width: 674px) {
-      right: -85vw;
+    @media (max-width: 600px) {
+      left: calc(50% - (-1 * 155px) + (100vw - 110vw) / 2);
     }
   }
 
@@ -44,7 +28,7 @@ $orange: #ca5541;
     left: 0;
     width: 150%;
     height: 100%;
-    background: #688563;
+    background: #3e5341;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -65,7 +49,6 @@ $orange: #ca5541;
 
       &.active {
         color: $orange;
-        text-decoration: underline $orange;
       }
     }
 
@@ -84,11 +67,11 @@ $orange: #ca5541;
         white-space: nowrap;
         text-align: left;
         text-decoration: none;
-        padding-bottom: 1rem;
+        padding-bottom: 1.2rem;
 
         &.active {
-          color: $orange;
-          text-decoration: underline $orange;
+          color: #c2d2a8;
+          opacity: 0.6;
         }
       }
     }
