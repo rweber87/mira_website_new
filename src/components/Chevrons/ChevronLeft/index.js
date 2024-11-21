@@ -8,9 +8,12 @@ import './styles.scss';
 
 export default function ChevronLeft(props) {
   const [strokeWidth, setStrokeWidth] = useState(0.25);
-  const pages = tiles.filter((tile) => tile.shouldHover);
+  const pages = tiles.filter((tile) => tile.isProjectTile);
   const projectId = useProjectId();
   const { hasPrevious, lastId, prevId } = usePageNavigation(pages, projectId);
+  const style = {
+    transition: 'stroke-width 0.3s ease',
+  };
 
   return (
     <Link
@@ -32,6 +35,7 @@ export default function ChevronLeft(props) {
           strokeLinejoin='miter'
           fill='none'
           {...props}
+          style={style}
         >
           <title id='chevronLeftIconTitle'>{'Chevron Left'}</title>
           <polyline points='14 18 8 12 14 6 14 6' />

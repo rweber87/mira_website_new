@@ -19,7 +19,6 @@ export default function Footer() {
       <div className='footer__wrapper'>
         <div className='footer__text_wrapper'>
           <div className='footer__column'>
-            <div className='lets_connect'>Let's Connect</div>
             {newContact ? (
               <div className='contact-wrapper'>
                 <div className='text'>
@@ -33,9 +32,7 @@ export default function Footer() {
                   </a>
                 </div>
                 <div className='text'>
-                  <a href='tel:+4917655285294' className='text-footer-link'>
-                    +49 176 552 852 94
-                  </a>
+                  <div className='text-footer-link'>+49 176 552 852 94</div>
                 </div>
               </div>
             ) : (
@@ -51,9 +48,7 @@ export default function Footer() {
                   </a>
                 </div>
                 <div className='text'>
-                  <a href='tel:+4917655285294' className='text-footer-link'>
-                    +49 176 552 852 94
-                  </a>
+                  <div className='text-footer-link'>+49 176 552 852 94</div>
                 </div>
               </>
             )}

@@ -16,7 +16,7 @@ export default function ProjectImageRow({ images }) {
       setRowSpace(74);
     } else {
       setMaxPhotos(2);
-      setRowSpace(15);
+      setRowSpace(64);
     }
   });
 

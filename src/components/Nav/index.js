@@ -10,7 +10,7 @@ export default function Nav() {
 
   useWindowSize((newSize) => {
     const { width } = newSize;
-    if (width < 768) {
+    if (width < 769) {
       setDisplayHamburger(true);
     } else {
       setDisplayHamburger(false);
@@ -30,20 +30,20 @@ export default function Nav() {
         >
           <span className='first_name'>mira</span>taferner
         </Link>
-        {displayHamburger ? null : (
+        {!displayHamburger && (
           <div className='navbar__wrapper'>
             <div className='navbar__links'>
               <Link
                 className={`navbar__link ${
-                  pathname.includes('portfolio')
+                  pathname.includes('portfolio/')
+                    ? 'portfolio-page active'
+                    : pathname.includes('portfolio')
                     ? 'active'
-                    : pathname.includes('portfolio/')
-                    ? 'portfolio-page'
                     : ''
                 }`}
                 to='/portfolio'
               >
-                portfolio
+                Portfolio
               </Link>
               <Link
                 className={`navbar__link hallo-link ${
@@ -55,7 +55,7 @@ export default function Nav() {
                 }`}
                 to='/hallo'
               >
-                hallo
+                Hallo
               </Link>
             </div>
           </div>

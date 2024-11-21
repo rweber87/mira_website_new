@@ -16,13 +16,13 @@ export default function HamburgerMenu() {
       <Hamburger toggled={isOpen} toggle={setIsOpen} color='#ca5541' />
       <div className={`overlay ${isOpen ? 'open' : ''}`}>
         <Link
-          className={`hamburger__main-link ${
+          className={`hamburger__main-link hallo ${
             pathname.includes('hallo') ? 'active' : ''
           }`}
           to='/hallo'
           onClick={() => setIsOpen(!isOpen)}
         >
-          hallo
+          Hallo
         </Link>
         <Link
           className={`hamburger__main-link ${
@@ -31,11 +31,11 @@ export default function HamburgerMenu() {
           to='/portfolio'
           onClick={() => setIsOpen(!isOpen)}
         >
-          portfolio
+          Portfolio
         </Link>
         <div className='hamburger__sub-links'>
           {tiles
-            .filter((tile) => tile.shouldHover)
+            .filter((tile) => tile.isProjectTile)
             .map((tile, idx) => (
               <Link
                 key={`link-${tile.page.title}-${idx}`}
@@ -45,7 +45,17 @@ export default function HamburgerMenu() {
                 to={`/portfolio/${tile.id}`}
                 onClick={() => setIsOpen(!isOpen)}
               >
-                {tile.page.title}
+                {tile.botText ? (
+                  <span className='type-span'>
+                    <div>
+                      {tile.topText}
+                      {/* <span className='bar'>|</span>
+                      {tile.botText} */}
+                    </div>
+                  </span>
+                ) : (
+                  tile.page.title
+                )}
               </Link>
             ))}
         </div>

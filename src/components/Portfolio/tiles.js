@@ -1,101 +1,27 @@
-const primaryUrl = 'https://mira-website-new.s3.amazonaws.com/';
+export const primaryUrl = 'https://mira-website-new.s3.amazonaws.com/';
 const tileLoc = 'tile-images/';
 const projectLoc = 'projects/';
 export const tileUrl = primaryUrl + tileLoc;
 
 export const tiles = [
   {
-    imageSrc: tileUrl + 'group_2.png',
-    topText: '',
+    imageSrc: null,
+    topText:
+      'Ich gestalte Digital- und Printmedien mit Kreativität, Liebe zum Detail und einem Blick für das große Ganze. Ich helfe dir, eine visuelle Sprache für deine Inhalte zu finden. Let’s tell a good story!',
     botText: '',
     id: 0,
-    shouldHover: false,
+    isProjectTile: false,
+    classValue: 'text-1',
+    link: '/hallo',
   },
   {
-    imageSrc: tileUrl + 'Landigpage_Fitz.png',
-    topText: 'Michael Fitz',
-    botText: 'Album Release',
-    id: 1,
-    shouldHover: true,
-    page: {
-      images: [
-        [
-          {
-            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_1.png',
-            width: 1170,
-            height: 828,
-            alt: 'project1Image1',
-          },
-        ],
-        [
-          {
-            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_2.png',
-            width: 1170,
-            height: 645,
-            alt: 'project1Image2',
-          },
-        ],
-        [
-          {
-            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_3.png',
-            width: 1170,
-            height: 645,
-            alt: 'project1Image3',
-          },
-          {
-            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_4.png',
-            width: 1170,
-            height: 645,
-            alt: 'project1Image4',
-          },
-        ],
-        [
-          {
-            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_5.png',
-            width: 1170,
-            height: 645,
-            alt: 'project1Image5',
-          },
-          {
-            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_6.png',
-            width: 1170,
-            height: 645,
-            alt: 'project1Image6',
-          },
-        ],
-        [
-          {
-            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_7.png',
-            width: 1170,
-            height: 396,
-            alt: 'project1Image7',
-          },
-        ],
-        [
-          {
-            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_8.png',
-            width: 1170,
-            height: 972,
-            alt: 'project1Image8',
-          },
-        ],
-      ],
-      title: 'Michael Fitz',
-      description:
-        'An Projekten für die Kunst und Kulturszene arbeiten zu dürfen, ist für mich, als Gestalterin und Musikerin, immer ein besonderes Geschenk. Der Münchner Musiker, Michael Fitz, brachte sein neues Album “Wenn I Schaug” in die Welt und ich durfte für die Agentur Grafikhaus, bei der ich damals angestellt war, das Design kreieren. Dafür durchsuchte, sortierte, kombiniert und mischte ich die gelieferten Daten, bestehend aus Ölgemälden und Fotografien aus dem Hause Fitz. Es entstand ein xx-seitiges Booklet, in dem jedes Lied eine individuell gestaltete, doppelseitige Collage erhielt - passend zum Text, Klang und Gefühl des jeweiligen Songs.',
-      secondaryMain: 'umsetzung',
-      secondaryDescription:
-        'CD-Cover und Booklet   -   CD   -   Plakat   -   Notizkarten',
-      thirdMain: 'team',
-      thirdDescription: 'Michael und Karin Fitz: Gemälde und Fotografie',
-    },
-  },
-  {
-    imageSrc: tileUrl + 'Landigpage_Logos.gif',
-    topText: 'Logos',
+    imageSrc: tileUrl + 'Landingpage_Logos.png',
+    topText: 'Logos &<br>Geschäftsausstattungen',
     botText: '',
-    id: 2,
-    shouldHover: true,
+    headerImage: primaryUrl + projectLoc + 'Logos/Logos_Header.png',
+    id: 1,
+    isProjectTile: true,
+    classValue: 'text',
     page: {
       images: [
         [
@@ -114,6 +40,20 @@ export const tiles = [
         ],
         [
           {
+            src: primaryUrl + projectLoc + 'Logos/PraxisUtaSiebert.png',
+            width: 585,
+            height: 410,
+            alt: 'project2Image11',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Logos/PraxisUtaSiebert_2.png',
+            width: 585,
+            height: 410,
+            alt: 'project2Image11',
+          },
+        ],
+        [
+          {
             src: primaryUrl + projectLoc + 'Logos/Conradt.png',
             width: 585,
             height: 410,
@@ -124,20 +64,6 @@ export const tiles = [
             width: 585,
             height: 410,
             alt: 'project2Image3',
-          },
-        ],
-        [
-          {
-            src: primaryUrl + projectLoc + 'Logos/SmokeRing.png',
-            width: 585,
-            height: 410,
-            alt: 'project2Image5',
-          },
-          {
-            src: primaryUrl + projectLoc + 'Logos/SmokeRing_2.png',
-            width: 585,
-            height: 410,
-            alt: 'project2Image5',
           },
         ],
         [
@@ -156,44 +82,16 @@ export const tiles = [
         ],
         [
           {
-            src: primaryUrl + projectLoc + 'Logos/Gioia.png',
+            src: primaryUrl + projectLoc + 'Logos/SmokeRing.png',
             width: 585,
             height: 410,
-            alt: 'project2Image9',
+            alt: 'project2Image5',
           },
           {
-            src: primaryUrl + projectLoc + 'Logos/Gioia_2.png',
+            src: primaryUrl + projectLoc + 'Logos/SmokeRing_2.png',
             width: 585,
             height: 410,
-            alt: 'project2Image9',
-          },
-        ],
-        [
-          {
-            src: primaryUrl + projectLoc + 'Logos/PraxisUtaSiebert.png',
-            width: 585,
-            height: 410,
-            alt: 'project2Image11',
-          },
-          {
-            src: primaryUrl + projectLoc + 'Logos/PraxisUtaSiebert_2.png',
-            width: 585,
-            height: 410,
-            alt: 'project2Image11',
-          },
-        ],
-        [
-          {
-            src: primaryUrl + projectLoc + 'Logos/lamano.png',
-            width: 585,
-            height: 410,
-            alt: 'project2Image1',
-          },
-          {
-            src: primaryUrl + projectLoc + 'Logos/lamano_2.png',
-            width: 585,
-            height: 410,
-            alt: 'project2Image1',
+            alt: 'project2Image5',
           },
         ],
         [
@@ -212,6 +110,34 @@ export const tiles = [
         ],
         [
           {
+            src: primaryUrl + projectLoc + 'Logos/lamano.png',
+            width: 585,
+            height: 410,
+            alt: 'project2Image1',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Logos/lamano_2.png',
+            width: 585,
+            height: 410,
+            alt: 'project2Image1',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Logos/Gioia.png',
+            width: 585,
+            height: 410,
+            alt: 'project2Image9',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Logos/Gioia_2.png',
+            width: 585,
+            height: 410,
+            alt: 'project2Image9',
+          },
+        ],
+        [
+          {
             src: primaryUrl + projectLoc + 'Logos/Heuss.png',
             width: 585,
             height: 410,
@@ -225,62 +151,65 @@ export const tiles = [
           },
         ],
       ],
-      title: 'Logos',
+      title: 'Logos & Geschäftsausstattungen',
       description:
-        'Logogestaltung und die Ausarbeitung einer stimmigen Gesamterscheinung gehört zu meinen Lieblingsaufgaben. Das feinfühlige Heranarbeiten an das finale Endergebnis ist immer wieder spannend und auch oft überraschend. Folgend ein paar Beispiele dieser kreativen Wutausbrüche.',
+        'Logogestaltung und die Ausarbeitung eines auf allen Ebenen stimmigen Erscheinungsbilds gehören zu meinen Lieblingsaufgaben. Der Prozess erfordert große Feinfühligkeit, ist immer wieder spannend und oft überraschend. Hier ein paar Beispiele meiner kreativen Ausbrüche.',
       secondary: '',
       companyInfo: [
         {
           name: 'Camaleon - Street Food',
-          description: 'Logo   -   Geschäftsausstattung',
+          description: 'Logo, Geschäftsausstattung',
+          url: 'https://www.instagram.com/camaleon.streetfood/',
+        },
+        {
+          name: 'Praxis Uta Siebert - Therapeutin und Bindungsanalyikerin',
+          description:
+            'Logo, Geschäftsausstattung, Webdesign, Flyer, Postkarten',
+          url: 'https://www.diebindungsanalytikerin.de/',
         },
         {
           name: 'Conradt and Friends - Motion Media',
-          description: 'Logo   -   Geschäftsausstattung',
-        },
-        {
-          name: 'Smoke Ring - Barbershop Quartet',
-          description: 'Logo   -   Merchandise',
+          description: 'Logo, Geschäftsausstattung',
+          url: 'https://www.friendspro.de',
         },
         {
           name: 'Abuell - DJ',
-          description: 'Logo   -   Geschäftsausstattung',
+          description: 'Logo, Logoanimation, Geschäftsausstattung',
+          url: 'https://www.instagram.com/abuellmusic/',
         },
         {
-          name: 'Gioia - Schmuckdesign',
-          description: 'Logo   -   Geschäftsausstattung',
-        },
-        {
-          name: 'Uta Siebert - Therpeutin und Bindungsanalytikerin',
-          description:
-            'Logo   -   Geschäftsausstattung   -   Webdesign   -   Flyer   -   Postkarten',
-        },
-        {
-          name: 'LaMano Kosmetikstudio',
-          description: 'Logo   -   Geschäftsausstattung',
+          name: 'Smoke Ring - Barbershop Quartet',
+          description: 'Logo, Merchandise',
+          url: 'https://www.youtube.com/watch?v=LCZoXBN5T9w&list=PLxEZmY5DKdREQ4GwfiuCTQDB-lOMrz1v1&index=1',
         },
         {
           name: 'Theresa Kosmetikstudio',
           description:
-            'Logo   -   Geschäftsausstattung   -   Flyer   -   Preislisten   -   Gutscheine   -   Gestaltung Studio',
+            'Logo,  Geschäftsausstattung,  Flyer,  Preislisten,  Gutscheine',
+        },
+        {
+          name: 'LaMano Kosmetikstudio',
+          description: 'Logo, Geschäftsausstattung',
+        },
+        {
+          name: 'Gioia - Schmuckdesign',
+          description: 'Logo, Geschäftsausstattung',
         },
         {
           name: 'Heuss - Power Tools',
-          description: 'Logo   -   Geschäftsausstattung',
-        },
-        {
-          name: 'Speak Up - Language School',
-          description: 'Logo   -   Geschäftsausstattung',
+          description: 'Logo, Geschäftsausstattung',
         },
       ],
     },
   },
   {
-    imageSrc: tileUrl + 'Landigpage_BMF.png',
-    topText: 'Bing!',
-    botText: 'Barbershop Musikfestival',
-    id: 3,
-    shouldHover: true,
+    imageSrc: tileUrl + 'Landingpage_BMF.png',
+    topText: 'Event Design',
+    botText: 'BinG! Barbershop Musikfestival',
+    headerImage: primaryUrl + projectLoc + 'BMF/BMF_Header.png',
+    id: 2,
+    isProjectTile: true,
+    classValue: 'text',
     page: {
       images: [
         [
@@ -313,6 +242,9 @@ export const tiles = [
             alt: 'project3Image4',
           },
         ],
+      ],
+      video: [primaryUrl + projectLoc + 'BMF/BMF_15.mp4'],
+      secondImages: [
         [
           {
             src: primaryUrl + projectLoc + 'BMF/BMF_5.png',
@@ -388,191 +320,111 @@ export const tiles = [
           },
         ],
       ],
+      type: 'Event Design',
       title: 'BinG! Barbershop Musikfestival',
       description:
-        'Alle 2 Jahre lädt BinG, der deutsche Fachverband für Barbershopgesang, zum Barbershop Musikfestival ein. Neben den Wettbewerben für Chören und Quartetten gibt es auch Shows, Afterglows und Coachings ... ein Wochenende, das gut geplant und in Szene gesetzt werden muss. Nach einer langen Pandemie-Pause hieß es 2023 endlich wieder: “We are ready for our next contestant.”\nMit einem tollen Team haben wir echt was auf die Beine gestellt! Neuer Slogan, neuer Look! Und Ensembles und Zuschauer jubelten gemeinsam: Barbershop is back!!',
+        'Alle zwei Jahre lädt BinG, der deutsche Fachverband für Barbershopgesang, zum Barbershop-Musikfestival ein. Neben den Wettbewerben für Chöre und Quartette gibt es auch Shows, Afterglows und Coachings. Nach langer Pandemiepause begeisterte ich das Festival mit einem neuem Slogan und dem dazu passenden Look. Teilnehmer und Publikum jubelten gemeinsam: Barbershop is back!',
       secondary: '',
-      secondaryMain: 'umsetzung',
+      secondaryMain: 'Umsetzung',
       secondaryDescription:
-        'Programmheft   -   Webauftritt   -   Plakate   -   Flyer   -   Lanyards & Badges   -   Banner   -   Roll-ups   -   Merchandise   -   Bauchbinden',
-      thirdMain: 'credits',
+        'Key Visual - Layout und Satz für Programmheft, Plakate, Flyer, Banner und Roll-Ups, Lanyards & Badges - Merchandise - Bauchbinden für Livestream - Web Design',
+      thirdMain: 'Team',
       thirdDescription:
-        'Robbie Weber: Programmierung Webseite \n Eric Ideler: Fotografie',
+        'Julia Moldenhauer und Almut Schmitz: Eventkoordination<br>Robbie Weber: Programmierung Webseite<br>Eric Ideler: Fotografie',
       fourthMain: '',
       fourthDescription: '',
     },
   },
   {
-    imageSrc: tileUrl + 'Landigpage_JollyKrawchucks.png',
-    topText: 'Hochzeit',
-    botText: 'The Jolly Krawchucks',
-    id: 4,
-    shouldHover: true,
+    imageSrc: tileUrl + 'Landingpage_Fitz.png',
+    topText: 'Doppelalbum',
+    botText: 'Michael Fitz',
+    headerImage: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_Header.png',
+    id: 3,
+    isProjectTile: true,
+    classValue: 'text',
     page: {
       images: [
         [
           {
-            src:
-              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_1.png',
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_1.png',
             width: 1170,
-            height: 788,
-            alt: 'project4Image1',
+            height: 828,
+            alt: 'project1Image1',
           },
         ],
         [
           {
-            src:
-              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_2.png',
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_2.png',
             width: 1170,
-            height: 767,
-            alt: 'project4Image2',
-          },
-          {
-            src:
-              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_3.png',
-            width: 1170,
-            height: 767,
-            alt: 'project4Image3',
+            height: 645,
+            alt: 'project1Image2',
           },
         ],
         [
           {
-            src:
-              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_4.png',
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_3.png',
             width: 1170,
-            height: 788,
-            alt: 'project4Image4',
+            height: 645,
+            alt: 'project1Image3',
+          },
+          {
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_4.png',
+            width: 1170,
+            height: 645,
+            alt: 'project1Image4',
           },
         ],
         [
           {
-            src:
-              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_5.png',
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_5.png',
             width: 1170,
-            height: 615,
-            alt: 'project4Image5',
+            height: 645,
+            alt: 'project1Image5',
+          },
+          {
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_6.png',
+            width: 1170,
+            height: 645,
+            alt: 'project1Image6',
           },
         ],
         [
           {
-            src:
-              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_6.png',
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_7.png',
             width: 1170,
-            height: 653,
-            alt: 'project4Image6',
+            height: 396,
+            alt: 'project1Image7',
           },
         ],
         [
           {
-            src:
-              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_7.png',
+            src: primaryUrl + projectLoc + 'MichaelFitz/MichaelFitz_8.png',
             width: 1170,
-            height: 1452,
-            alt: 'project4Image7',
-          },
-        ],
-        [
-          {
-            src:
-              primaryUrl + projectLoc + 'JollyKrawchucks/JollyKrawchucks_8.png',
-            width: 1170,
-            height: 1160,
-            alt: 'project4Image8',
+            height: 972,
+            alt: 'project1Image8',
           },
         ],
       ],
-      title: 'The Jolly Krawchucks',
+      title: 'Michael Fitz',
+      type: 'Doppelalbum',
       description:
-        'Willow & Gareth wussten genau, welchen Vibe ihr besondere Tag haben sollte. Ich durfte mit der Gestaltung der Printsachen ein kein wenig helfen, ihre Vision zum Leben zu erwecken. Mit viel Liebe zum Detail kreierten die beiden ein Hochzeitswochenende, dass den Gästen noch lange in Erinnerung bleiben wird.',
-      secondaryMain: 'umsetzung',
+        'Als der Münchner Musiker Michael Fitz sein neues Album “Wenn I Schaug” in die Welt brachte, durfte ich für die Agentur „Grafikhaus“ das Design kreieren. Dafür durchsuchte, sortierte, kombinierte und mischte ich Ölgemälde und Fotografien aus dem Hause Fitz. Es entstand ein 48-seitiges Booklet, in dem jedes Lied eine individuell gestaltete doppelseitige Collage passend zum Text, Sound und Gefühl des jeweiligen Songs bekam.',
+      secondaryMain: 'Umsetzung',
       secondaryDescription:
-        'Einladung  -   RSVP Karten  -   Platzkarten   -   Menü   -   Infoflyer   -   Hochzeitsandenken',
+        'Artwork und Layout für CD-Cover und -Booklet, CD, Plakat, und Notizkarten',
+      thirdMain: 'Fotografie/Gemälde',
+      thirdDescription: 'Michael und Karin Fitz',
     },
   },
   {
-    imageSrc: tileUrl + 'group_3.png',
-    topText: '',
-    botText: '',
-    id: 11,
-    shouldHover: false,
-  },
-  {
-    imageSrc: tileUrl + 'Landigpage_FischkoppBazi.png',
-    topText: 'Hochzeit',
-    botText: 'Fischkopp & Bazi',
-    id: 5,
-    shouldHover: true,
-    page: {
-      images: [
-        [
-          {
-            src:
-              primaryUrl + projectLoc + 'Fischkopp&Bazi/FischkoppundBazi_1.png',
-            width: 1170,
-            height: 788,
-            alt: 'project6Image1',
-          },
-        ],
-        [
-          {
-            src:
-              primaryUrl + projectLoc + 'Fischkopp&Bazi/FischkoppundBazi_2.png',
-            width: 1170,
-            height: 684,
-            alt: 'project6Image2',
-          },
-        ],
-        [
-          {
-            src:
-              primaryUrl + projectLoc + 'Fischkopp&Bazi/FischkoppundBazi_3.png',
-            width: 1170,
-            height: 753,
-            alt: 'project6Image3',
-          },
-        ],
-        [
-          {
-            src:
-              primaryUrl + projectLoc + 'Fischkopp&Bazi/FischkoppundBazi_4.png',
-            width: 1170,
-            height: 788,
-            alt: 'project6Image4',
-          },
-        ],
-        [
-          {
-            src:
-              primaryUrl + projectLoc + 'Fischkopp&Bazi/FischkoppundBazi_5.png',
-            width: 1170,
-            height: 811,
-            alt: 'project6Image5',
-          },
-        ],
-        [
-          {
-            src:
-              primaryUrl + projectLoc + 'Fischkopp&Bazi/FischkoppundBazi_6.png',
-            width: 1170,
-            height: 753,
-            alt: 'project6Image6',
-          },
-        ],
-      ],
-      title: 'Fischkopp & Bazi',
-      description:
-        'Sie aus dem hohen Norden, er aus dem tiefen Süden. Verbunden durch die Liebe zur Barbershop-Musik.',
-      secondaryMain: 'umsetzung',
-      secondaryDescription:
-        'Einladung  -   RSVP Karten   -   Menü   -   Dankeskarten',
-    },
-  },
-  {
-    imageSrc: tileUrl + 'Landigpage_Buchcover.png',
+    imageSrc: tileUrl + 'Landingpage_Buchcover.png',
     topText: 'Buchcover',
     botText: '',
-    id: 6,
-    shouldHover: true,
+    headerImage: primaryUrl + projectLoc + 'Buchcover/Buchcover_Header.png',
+    id: 4,
+    isProjectTile: true,
+    classValue: 'text',
     page: {
       images: [
         [
@@ -587,6 +439,22 @@ export const tiles = [
             width: 570,
             height: 600,
             alt: 'project6Image2',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Buchcover/Buchcover_7.png',
+            width: 1173,
+            height: 721,
+            alt: 'project6Image7',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Buchcover/Buchcover_8.png',
+            width: 1173,
+            height: 828,
+            alt: 'project6Image8',
           },
         ],
         [
@@ -620,110 +488,313 @@ export const tiles = [
       ],
       title: 'Buchcover',
       description:
-        'Die Gestaltung von Buchcovern lässt mein Kreativ-Herz höherschlagen. Ähnlich wie bei der Logoentwicklung geht es darum, dem Betrachter auf den ersten Blick die Essenz des Buches zu vermitteln. Dies gelingt mit aussagekräftigen Bildern, Grafiken. Manchmal reicht auch nur Typografie. Nicht jedes der folgenden Cover hat es in die Regale der Buchläden geschafft. Ich zeige sie trotzdem.',
+        'Die Gestaltung von Buchcovern lässt mein Kreativ-Herz höher schlagen. Ähnlich wie bei der Logoentwicklung geht es darum, dem Betrachter auf den ersten Blick den Wesenskern des Buches zu vermitteln – mit aussagekräftigen Bildern, Grafiken oder Typografie.',
       secondary: '',
     },
   },
   {
-    imageSrc: tileUrl + 'Landigpage_Herzensangelegenheiten.png',
-    topText: 'Herzenangelegenheiten',
+    topText: 'GET<br>IN<br>TOUCH',
     botText: '',
-    id: 7,
-    shouldHover: true,
+    id: 5,
+    isProjectTile: false,
+    classValue: 'text-1 get-in-touch',
+    link: 'mailto:hallo@mirataferner.com',
+  },
+  {
+    imageSrc: tileUrl + 'Landingpage_Hochzeiten.png',
+    topText: 'Hochzeiten',
+    botText: '',
+    headerImage: primaryUrl + projectLoc + 'Hochzeiten/Hochzeit_Header.png',
+    id: 6,
+    isProjectTile: true,
+    classValue: 'text',
     page: {
       images: [
         [
           {
-            src:
-              primaryUrl +
-              projectLoc +
-              'Herzensangelegenheiten/Kinderliederbuch_1.png',
+            src: primaryUrl + projectLoc + 'Hochzeiten/JollyKrawchucks_1.png',
             width: 1170,
-            height: 983,
-            alt: 'project7Image1',
+            height: 788,
+            alt: 'project4Image1',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/JollyKrawchucks_2.png',
+            width: 1170,
+            height: 767,
+            alt: 'project4Image2',
           },
           {
-            src:
-              primaryUrl +
-              projectLoc +
-              'Herzensangelegenheiten/Kinderliederbuch_2.png',
+            src: primaryUrl + projectLoc + 'Hochzeiten/JollyKrawchucks_3.png',
             width: 1170,
-            height: 783,
+            height: 767,
+            alt: 'project4Image3',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/JollyKrawchucks_4.png',
+            width: 1170,
+            height: 788,
+            alt: 'project4Image4',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/JollyKrawchucks_5.png',
+            width: 1193,
+            height: 1551,
+            alt: 'project4Image5',
+          },
+        ],
+      ],
+      secondImages: [
+        [
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/FischkoppundBazi_1.png',
+            width: 1170,
+            height: 788,
+            alt: 'project6Image1',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/FischkoppundBazi_2.png',
+            width: 1170,
+            height: 684,
+            alt: 'project6Image2',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/FischkoppundBazi_3.png',
+            width: 1170,
+            height: 753,
+            alt: 'project6Image3',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/FischkoppundBazi_4.png',
+            width: 1170,
+            height: 788,
+            alt: 'project6Image4',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/FischkoppundBazi_5.png',
+            width: 1170,
+            height: 811,
+            alt: 'project6Image5',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/FischkoppundBazi_6.png',
+            width: 1170,
+            height: 753,
+            alt: 'project6Image6',
+          },
+        ],
+      ],
+      thirdImages: [
+        [
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/RobbieandMira_1.png',
+            width: 1170,
+            height: 1005,
+            alt: 'project9Image1',
+          },
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/RobbieandMira_2.png',
+            width: 1170,
+            height: 883,
+            alt: 'project9Image2',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/RobbieandMira_3.png',
+            width: 1170,
+            height: 701,
+            alt: 'project9Image3',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/RobbieandMira_4.png',
+            width: 1170,
+            height: 900,
+            alt: 'project9Image4',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/RobbieandMira_5.png',
+            width: 1170,
+            height: 788,
+            alt: 'project9Image5',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Hochzeiten/RobbieandMira_6.png',
+            width: 1170,
+            height: 873,
+            alt: 'project9Image6',
+          },
+        ],
+      ],
+      title: 'Hochzeiten',
+      description:
+        'Ich durfte einige Paaren bei der grafischen Umsetzung Ausstattung ihrer Hochzeit unterstützen. So individuell wie die Paare sind, habe ich auch die jeweiligen Einladungen, Platz- und Menükarten, Hochzeitsandenken und Webseiten gestaltet.',
+      secondaryMain: '',
+      secondaryDescription: '',
+    },
+  },
+  {
+    imageSrc: tileUrl + 'Landingpage_LayoutSatz.png',
+    topText: 'Layout & Satz',
+    botText: 'Klöpferholz',
+    headerImage: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_Header.png',
+    id: 7,
+    isProjectTile: true,
+    classValue: 'text',
+    page: {
+      images: [
+        [
+          {
+            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_1.png',
+            width: 1170,
+            height: 770,
+            alt: 'project7Image1',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_2.png',
+            width: 1170,
+            height: 836,
             alt: 'project7Image2',
           },
         ],
         [
           {
-            src:
-              primaryUrl +
-              projectLoc +
-              'Herzensangelegenheiten/Kinderliederbuch_3.png',
+            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_3.png',
             width: 1170,
-            height: 783,
+            height: 770,
             alt: 'project7Image3',
           },
         ],
         [
           {
-            src:
-              primaryUrl +
-              projectLoc +
-              'Herzensangelegenheiten/Kinderliederbuch_4.png',
+            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_4.png',
             width: 1170,
-            height: 783,
+            height: 836,
             alt: 'project7Image4',
           },
         ],
-      ],
-      title: 'Herzensangelegenheiten ',
-      description:
-        'Manche Projekte sind Herzensprojekte. Ich finde, auch die dürfen gezeigt werden.',
-      secondary:
-        'Zum Beispiel dieses einzigartige Geschenk für eine Freundin ihr zweites Kind erwartete. Gemeinsam mit einer Gruppe kreativer Freunde erstellten wir dieses Kinderliederbuch der anderen Art. Die ausgewählten Kinderlieder sind alt bekannt. Was besonders ist: Passend zum Buch gibt es auch eine CD! Wir haben die Lieder selbst eingesungen bzw. eingespielt. Dazu noch ein paar Bilder gemalt und schwups - war das 22-seitige Liederbuch fertig!',
-      secondaryMain: 'umsetzung',
-      secondaryDescription: 'Liederbuch  -   CD',
-      thirdMain: 'team',
-      thirdDescription: 'Nina, Domi, Anna, Gabriele, Ramon',
-    },
-    secondPage: {
-      images: [
         [
           {
-            src:
-              primaryUrl +
-              projectLoc +
-              'Herzensangelegenheiten/Zeitscheine_1.png',
+            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_5.png',
             width: 1170,
-            height: 996,
+            height: 837,
             alt: 'project7Image5',
           },
         ],
         [
           {
-            src:
-              primaryUrl +
-              projectLoc +
-              'Herzensangelegenheiten/Zeitscheine_2.png',
+            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_6.png',
             width: 1170,
-            height: 625,
+            height: 780,
             alt: 'project7Image6',
           },
         ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_12.png',
+            width: 1170,
+            height: 780,
+            alt: 'project7Image12',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_7.png',
+            width: 1170,
+            height: 780,
+            alt: 'project7Image7',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_8.png',
+            width: 1170,
+            height: 780,
+            alt: 'project7Image8',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_9.png',
+            width: 1170,
+            height: 780,
+            alt: 'project7Image9',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_9.png',
+            width: 1170,
+            height: 780,
+            alt: 'project7Image9',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_10.png',
+            width: 1170,
+            height: 780,
+            alt: 'project7Image10',
+          },
+        ],
+        [
+          {
+            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_11.png',
+            width: 1170,
+            height: 780,
+            alt: 'project7Image11',
+          },
+        ],
       ],
-      title: '',
+      title: 'Klöpferholz',
+      type: 'Layout & Satz',
       description:
-        "Oder die Zeitscheine, die wir meinem Papa zum 60sten geschenkt haben. Mit den Scheinen konnte er sich auserwählte Aktivitäten mit uns “kaufen”. Eisstockschießen, Städtetrip, Spieleabend... Gemeinsam Zeit verbringen.\nThat's real value!",
-      secondary: '',
+        'Als Deutschlands größter Holzvermarkter versorgt die Klöpfer Gruppe Handwerker, Baubranche, Industrie und Handel. Während meiner Anstellung bei der Agentur „Grafikhaus“ betreute ich Klöpferholz über viele Jahre und gestaltete Printmedien aller Art für die verschiedenen Teilbereiche des Unternehmens.',
+      secondaryMain: '',
+      secondaryDescription: '',
     },
   },
   {
-    imageSrc: tileUrl + 'Landigpage_PraxisUtaSiebert.png',
-    topText: 'Praxis Uta Siebert',
-    botText: '',
+    imageSrc: tileUrl + 'Landingpage_PraxisUtaSiebert.png',
+    topText: 'Visual Identity',
+    botText: 'Praxis Uta Siebert',
+    headerImage:
+      primaryUrl + projectLoc + 'PraxisUtaSiebert/PraxisUtaSiebert_Header.png',
     id: 8,
-    shouldHover: true,
+    isProjectTile: true,
+    classValue: 'text',
     page: {
       images: [
+        [
+          {
+            src:
+              primaryUrl +
+              projectLoc +
+              'PraxisUtaSiebert/PraxisUtaSiebert_3.png',
+            width: 1170,
+            height: 1263,
+            alt: 'project8Image3',
+          },
+        ],
         [
           {
             src:
@@ -742,17 +813,6 @@ export const tiles = [
             width: 1170,
             height: 788,
             alt: 'project8Image2',
-          },
-        ],
-        [
-          {
-            src:
-              primaryUrl +
-              projectLoc +
-              'PraxisUtaSiebert/PraxisUtaSiebert_3.png',
-            width: 1170,
-            height: 1263,
-            alt: 'project8Image3',
           },
         ],
         [
@@ -830,102 +890,171 @@ export const tiles = [
         ],
       ],
       title: 'Praxis Uta Siebert',
+      type: 'Visual Identity',
       description:
-        'Für die Privatpraxis der Psychotherapie von Uta Siebert im Zentrum Münchens habe ich das bestehende CI überarbeitet und erweitert. Ein besonderes Angebot der Praxis: Die Mutter-Kind-Bindungsanalyse.Für diesen Teilbereich entwickelte ich ein optisches Konzept, welches sich harmonisch in das Gestaltungskonzept der Praxis integriert. Mit einem Logo für “die Bindungsanalytikerin”, einem angepassten Farbkonzept und passenden Webauftritt, entsteht somit ein Raum rund um die Themen Frauen, Schwangerschaft und gesunden Babies.',
+        'Für die Privatpraxis der Psychotherapeutin Uta Siebert im Zentrum Münchens habe ich das CI überarbeitet und erweitert für ihr besonderes Angebot: Die Mutter-Kind-Bindungsanalyse. Dafür entwickelte ich ein grafisches Konzept, das sich harmonisch in das Gestaltungskonzept der Praxis fügt. Mit einem eigenen Logo für „die Bindungsanalytikerin“, einem angepassten Farbkonzept und einem dazu passenden Webauftritt ist in der Praxis ein eigener Bereich für dieses wichtige Thema entstanden.',
       secondary: '',
-      secondaryMain: 'umsetzung',
+      secondaryMain: 'Umsetzung',
       secondaryDescription:
-        'Logo  -   Geschäftsausstattung   -   Beschilderung   -   Flyer   -   Webauftritt',
+        'Logo & Visual Identity, Layout & Satz für Beschilderung und Flyer, Überarbeitung der homepage',
     },
   },
   {
-    imageSrc: tileUrl + 'Landigpage_Animation.png',
-    topText: 'Animation',
-    botText: '',
+    imageSrc: tileUrl + 'Landingpage_Zeitscheine.png',
+    topText: 'Zeitscheine',
+    botText: 'Geschenk zum 60. Geburtstag',
+    headerImage: primaryUrl + projectLoc + 'Zeitscheine/Zeitscheine_Header.png',
     id: 9,
-    shouldHover: true,
-    page: {
-      images: [],
-      videos: [
-        'https://www.youtube.com/embed/x383taAa3S4?si=Zbx39ZatsOYdIhbs',
-        'https://www.youtube.com/embed/-wBFkshvX9w?si=u-6sZ7E-no5efDlB',
-      ],
-      title: 'Animation',
-      description:
-        'Die Erstellung von bewegten Bildern eröffneten mir einen komplett neuen Raum der Kreativität. Das harmonische Zusammenspiel von Bild, Ton und Timing fordert mich, auf genau die richtige Art und Weise.',
-      secondary:
-        'Hier zwei Beispiele von schlichter, animierter Weihnachtspost, ohne viel Tamtam.',
-      secondVideo: [
-        'https://www.youtube.com/embed/2rX_MLJ6h0w?si=JEWzr0H5c9WOEiLf',
-      ],
-      secondMain: 'Ein Logo zum Leben erwecken? Klar!',
-    },
-  },
-  {
-    imageSrc: tileUrl + 'Landigpage_Robbie&Mira.png',
-    topText: 'Hochzeit',
-    botText: 'Robbie & Mira',
-    id: 10,
-    shouldHover: true,
+    isProjectTile: true,
+    classValue: 'text',
     page: {
       images: [
         [
           {
-            src: primaryUrl + projectLoc + 'Robbie&Mira/RobbieandMira_1.png',
+            src: primaryUrl + projectLoc + 'Zeitscheine/Zeitscheine_1.png',
             width: 1170,
-            height: 1005,
-            alt: 'project9Image1',
+            height: 996,
+            alt: 'project7Image5',
           },
         ],
         [
           {
-            src: primaryUrl + projectLoc + 'Robbie&Mira/RobbieandMira_2.png',
+            src: primaryUrl + projectLoc + 'Zeitscheine/Zeitscheine_2.png',
             width: 1170,
-            height: 883,
-            alt: 'project9Image2',
-          },
-        ],
-        [
-          {
-            src: primaryUrl + projectLoc + 'Robbie&Mira/RobbieandMira_3.png',
-            width: 1170,
-            height: 701,
-            alt: 'project9Image3',
-          },
-        ],
-        [
-          {
-            src: primaryUrl + projectLoc + 'Robbie&Mira/RobbieandMira_4.png',
-            width: 1170,
-            height: 900,
-            alt: 'project9Image4',
-          },
-        ],
-        [
-          {
-            src: primaryUrl + projectLoc + 'Robbie&Mira/RobbieandMira_5.png',
-            width: 1170,
-            height: 788,
-            alt: 'project9Image5',
-          },
-        ],
-        [
-          {
-            src: primaryUrl + projectLoc + 'Robbie&Mira/RobbieandMira_6.png',
-            width: 1170,
-            height: 788,
-            alt: 'project9Image6',
+            height: 625,
+            alt: 'project7Image6',
           },
         ],
       ],
-      title: 'Robbie & Mira',
+      title: 'Zeitscheine',
+      type: 'Geschenk zum 60. Geburtstag',
       description:
-        'Und wenn sich die Berufsbilder so wunderbar ergänzen, kann man die Hochzeitswebpage gemeinsam erstellen. Teamwork makes the dream work. Genial!',
-      secondaryMain: 'umsetzung',
+        'Was schenkt man zum 60. Geburtstag? Zeug hat man in dem Alter wahrscheinlich genug. Lieber was mit Substanz. Etwas, das man im Geschäft nicht bekommt. Gemeinsame Zeit! Mit den Zeitscheinen konnte sich das Geburtstagskind Aktivitäten „kaufen“: Eisstockschießen, ein Städtetrip oder ein Spieleabend... Gemeinsam Zeit verbringen – that’s real value!',
+      secondary: '',
+      secondaryMain: '',
+      secondaryDescription: '',
+      thirdMain: '',
+      thirdDescription: '',
+    },
+  },
+  {
+    imageSrc: tileUrl + 'Landingpage_Animation.gif',
+    topText: 'Animation',
+    botText: '',
+    id: 10,
+    isProjectTile: true,
+    classValue: 'text',
+    page: {
+      images: [],
+      videos: [
+        primaryUrl + projectLoc + 'Animation/Animation_1.mp4',
+        primaryUrl + projectLoc + 'Animation/Animation_2.mp4',
+        primaryUrl + projectLoc + 'Animation/Animation_3.mp4',
+        primaryUrl + projectLoc + 'Animation/Animation_4.mp4',
+      ],
+      title: 'Animation',
+      description:
+        'Die Erstellung von bewegten Bildern eröffnet mir einen neuen Raum der Kreativität. Mein Gespürt für Musik und Rhythmus kommt mir beim harmonischen Zusammenspiel von Bild, Ton und Timing zugute.',
+      secondary: '',
+      secondVideo: [],
+      secondMain: '',
+    },
+  },
+  {
+    topText: 'Hier gibts was auf die Ohren',
+    botText: '',
+    id: 11,
+    isProjectTile: false,
+    classValue: 'text-2',
+    link: 'https://open.spotify.com/playlist/6y6kGxIt1MmD2el8sOTFEu?si=efc86238f76f4ec1',
+  },
+  {
+    imageSrc: tileUrl + 'Landingpage_Kinderliederbuch.png',
+    topText: 'Kinderliederbuch',
+    botText: 'Geschenk für den Nachwuchs',
+    headerImage:
+      primaryUrl + projectLoc + 'Kinderliederbuch/Kinderliederbuch_Header.png',
+    id: 12,
+    isProjectTile: true,
+    classValue: 'text',
+    page: {
+      images: [
+        [
+          {
+            src:
+              primaryUrl +
+              projectLoc +
+              'Kinderliederbuch/Kinderliederbuch_1.png',
+            width: 1170,
+            height: 983,
+            alt: 'project12Image1',
+          },
+        ],
+        [
+          {
+            src:
+              primaryUrl +
+              projectLoc +
+              'Kinderliederbuch/Kinderliederbuch_2.png',
+            width: 1170,
+            height: 783,
+            alt: 'project12Image2',
+          },
+        ],
+        [
+          {
+            src:
+              primaryUrl +
+              projectLoc +
+              'Kinderliederbuch/Kinderliederbuch_3.png',
+            width: 1170,
+            height: 783,
+            alt: 'project12Image3',
+          },
+        ],
+        [
+          {
+            src:
+              primaryUrl +
+              projectLoc +
+              'Kinderliederbuch/Kinderliederbuch_4.png',
+            width: 1170,
+            height: 783,
+            alt: 'project12Image4',
+          },
+        ],
+        [
+          {
+            src:
+              primaryUrl +
+              projectLoc +
+              'Kinderliederbuch/Kinderliederbuch_5.png',
+            width: 1170,
+            height: 819,
+            alt: 'project12Image5',
+          },
+        ],
+        [
+          {
+            src:
+              primaryUrl +
+              projectLoc +
+              'Kinderliederbuch/Kinderliederbuch_6.png',
+            width: 1170,
+            height: 678,
+            alt: 'project12Image6',
+          },
+        ],
+      ],
+      title: 'Geschenk für Nachwuchs',
+      type: 'Kinderliederbuch',
+      description:
+        'Gemeinsam mit singfreudigen Freunden kreierte ich ein Kinderliederbuch mit CD – mit liebevollen und lustigen Illustrationen. Die Lieder wurden von uns selbst eingesungen beziehungsweise eingespielt.',
+      secondaryMain: 'Umsetzung',
       secondaryDescription:
-        'Einladung  -   Infoflyer   -   Webauftritt   -   Dankeskarten',
-      thirdMain: 'team',
-      thirdDescription: 'Robbie Weber: Programmierung Webseite',
+        'Layout und Gestaltung Liederbuch - CD - Tonaufnahmen - Projektkoordination',
+      thirdMain: 'Team',
+      thirdDescription: 'Nina, Domi, Anna, Gabriele und Ramon',
     },
   },
 ];

@@ -9,9 +9,12 @@ import './styles.scss';
 
 export default function ChevronRight(props) {
   const [strokeWidth, setStrokeWidth] = useState(0.25);
-  const pages = tiles.filter((tile) => tile.shouldHover);
+  const pages = tiles.filter((tile) => tile.isProjectTile);
   const projectId = useProjectId();
   const { firstId, hasNext, nextId } = usePageNavigation(pages, projectId);
+  const style = {
+    transition: 'stroke-width 0.3s ease',
+  };
 
   return (
     <Link
@@ -22,6 +25,7 @@ export default function ChevronRight(props) {
     >
       <button className='chevron-icon'>
         <svg
+          style={style}
           width='100px'
           height='100px'
           viewBox='0 0 24 24'

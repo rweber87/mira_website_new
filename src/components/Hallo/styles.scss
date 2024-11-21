@@ -1,103 +1,165 @@
-.two-column-wrapper {
-  background-color: #688563;
-  padding-bottom: 5rem;
-  display: flex;
-  flex-wrap: nowrap;
-  font-family: 'Raleway', sans-serif;
-  max-width: 1170px;
+// .two-column-wrapper {
+//   background-color: #688563;
+//   padding-bottom: 5rem;
+//   display: flex;
+//   flex-wrap: nowrap;
+//   font-family: 'Raleway', sans-serif;
+//   max-width: 1170px;
 
-  @media (max-width: 1200px) {
-    max-width: 760px;
-  }
+//   @media (max-width: 1200px) {
+//     max-width: 760px;
+//   }
 
-  @media (max-width: 768px) {
-    max-width: 356px;
+//   @media (max-width: 768px) {
+//     max-width: 356px;
+//   }
+
+//   &__text {
+//     margin: 0rem 8rem 0rem 0rem;
+//     display: flex;
+//     flex-direction: column;
+//     color: white;
+//     font-weight: 100;
+//     line-height: 25px;
+//     flex: 0 1 33.33%;
+
+//     .lust-text {
+//       color: #c2d2a8;
+//       font-weight: 600;
+//     }
+
+//     .section {
+//       padding-bottom: 2em;
+
+//       .linkedin {
+//         padding-right: 3em;
+//       }
+
+//       .icon {
+//         &:hover {
+//           opacity: 0.5;
+//         }
+//       }
+//     }
+
+//     .paragraph {
+//       padding-bottom: 2rem;
+//     }
+
+//     .can-do {
+//       &__title {
+//         padding: 10rem 0 2rem 0;
+//       }
+//     }
+//   }
+
+//   .mira-gif {
+//     flex: 0 1 66.67%;
+//   }
+
+//   @media (max-width: 768px) {
+//     flex-direction: column;
+//     flex-wrap: wrap;
+
+//     &__text {
+//       flex: 1 1 100%;
+//       margin: 0rem;
+//     }
+
+//     .mira-gif {
+//       flex: 1 1 100%;
+//       margin: 0;
+//     }
+//   }
+// }
+
+// .about-me-section {
+//   color: white;
+//   font-weight: 100;
+//   line-height: 25px;
+//   font-family: 'Raleway', sans-serif;
+
+//   @media (max-width: 768px) {
+//     max-width: 356px;
+//   }
+
+//   .section {
+//     padding-bottom: 2em;
+
+//     &.list {
+//       margin-bottom: -1em;
+//     }
+//   }
+
+//   .header {
+//     margin-bottom: -1em;
+//     font-weight: 600;
+//     padding-bottom: 2em;
+//   }
+// }
+
+// .info-text {
+//   font-weight: 400;
+// }
+.top-section-wrapper {
+  width: 100vw;
+  background: #688563;
+
+  &__text-wrapper {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 3rem 0rem;
+    @media (max-width: 1200px) {
+      width: 760px;
+    }
+    @media (max-width: 768px) {
+      width: 354px;
+    }
   }
 
   &__text {
-    margin: 0rem 8rem 0rem 0rem;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
     color: white;
-    font-weight: 100;
-    line-height: 25px;
-    flex: 0 1 33.33%;
-
-    .lust-text {
-      color: #c2d2a8;
-      font-weight: 600;
-    }
-
-    .section {
-      padding-bottom: 2em;
-
-      .linkedin {
-        padding-right: 3em;
-      }
-
-      .icon {
-        &:hover {
-          opacity: 0.5;
-        }
-      }
-    }
-
-    .paragraph {
-      padding-bottom: 2rem;
-    }
-
-    .can-do {
-      &__title {
-        padding: 10rem 0 2rem 0;
-      }
-    }
+    line-height: 40px;
+    font-size: 1.25rem;
   }
 
-  .mira-gif {
-    flex: 0 1 66.67%;
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    &__text {
-      flex: 1 1 100%;
-      margin: 0rem;
-    }
-
-    .mira-gif {
-      flex: 1 1 100%;
-      margin: 0;
-    }
+  .first {
+    padding-bottom: 2rem;
   }
 }
 
-.about-me-section {
-  color: white;
-  font-weight: 100;
-  line-height: 25px;
-  font-family: 'Raleway', sans-serif;
+.bottom-section-wrapper {
+  width: 100vw;
+  background: white;
 
-  @media (max-width: 768px) {
-    max-width: 356px;
-  }
-
-  .section {
-    padding-bottom: 2em;
-
-    &.list {
-      margin-bottom: -1em;
+  &__text-wrapper {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 3rem 0rem 1rem 0rem;
+    @media (max-width: 1200px) {
+      width: 760px;
+    }
+    @media (max-width: 768px) {
+      width: 354px;
     }
   }
 
-  .header {
-    margin-bottom: -1em;
+  &__text-header {
+    font-family: 'Raleway', sans-serif;
+    line-height: 40px;
+    font-size: 1.25rem;
     font-weight: 600;
-    padding-bottom: 2em;
   }
-}
 
-.info-text {
-  font-weight: 400;
+  &__text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25rem;
+  }
+
+  li {
+    line-height: 100px;
+  }
 }

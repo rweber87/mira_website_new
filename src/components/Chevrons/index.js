@@ -6,7 +6,7 @@ import useWindowSize from '../../hooks/windowResize';
 import './styles.scss';
 
 export default function Chevrons() {
-  const [showChevrons, setShowChevrons] = useState(false);
+  const [showChevrons, setShowChevrons] = useState(true);
   useWindowSize((newSize) => {
     const { width } = newSize;
     if (width > 768) {
@@ -15,6 +15,7 @@ export default function Chevrons() {
       setShowChevrons(false);
     }
   });
+
   return (
     <>
       {showChevrons ? (
@@ -22,7 +23,11 @@ export default function Chevrons() {
           <ChevronLeft />
           <ChevronRight />
         </div>
-      ) : null}
+      ) : (
+        <div className='chevron-wrapper'>
+          <ChevronRight />
+        </div>
+      )}
     </>
   );
 }

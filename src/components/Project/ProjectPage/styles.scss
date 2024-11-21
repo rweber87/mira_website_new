@@ -1,29 +1,58 @@
+$harmony: #688563;
+
 .project-page {
   &__text-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
     font-family: 'Raleway', sans-serif;
     line-height: 32px;
-    color: #979797;
+    color: #4b4a4a;
     padding-bottom: 5rem;
+    width: 1170px;
+
+    @media (max-width: 1200px) {
+      width: 760px;
+    }
 
     @media (max-width: 768px) {
       max-width: 356px;
+    }
+
+    .title-type-wrapper {
+      display: flex;
+      flex-direction: row;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .bar {
+        font-size: 1.65rem;
+        padding: 0em 1em;
+      }
     }
 
     .title {
       font-size: 2rem;
       padding-bottom: 2rem;
       font-weight: 300;
+      color: $harmony;
+
+      &.lh {
+        @media (max-width: 768px) {
+          line-height: 40px;
+        }
+      }
     }
 
     .description {
       white-space: pre-line;
       width: 65%;
       font-weight: 400;
+      font-size: 1rem;
       @media (max-width: 768px) {
         width: 100%;
       }
@@ -41,8 +70,9 @@
     .description_secondary-main,
     .description_third-main {
       font-weight: 400;
+      font-size: 1.25rem;
       padding-right: 1em;
-      color: #ca5541;
+      color: $harmony;
       @media (max-width: 767px) {
         padding-right: 0em;
       }
