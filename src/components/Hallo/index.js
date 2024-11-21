@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { RowsPhotoAlbum } from 'react-photo-album';
-import Behance from '../Icons/Behance';
-import LinkedIn from '../Icons/LinkedIn';
-import { tileUrl } from '../Portfolio/tiles';
-import useWindowSize from '../../hooks/windowResize';
+import React, { useEffect } from 'react';
 import Selector from './Selector';
 
 import './styles.scss';
 
 export default function Hallo() {
-  const [isMobileMode, setIsMobileMode] = useState(false);
+  // const [isMobileMode, setIsMobileMode] = useState(false);
   const canDo = [
     'langjährige und vertrauensvolle Geschäftsbeziehungen schätzt und pflegst',
     'gerne eine extra Runde drehst, um zu einem stimmigen Ergebnis zu kommen, das Ästhetik und Funktionalität gleichwertig berücksichtigt',
@@ -21,14 +15,14 @@ export default function Hallo() {
     window.scrollTo(-50, 0);
   }, []);
 
-  useWindowSize((newSize) => {
-    const { width } = newSize;
-    if (width < 768) {
-      setIsMobileMode(true);
-    } else {
-      setIsMobileMode(false);
-    }
-  });
+  // useWindowSize((newSize) => {
+  //   const { width } = newSize;
+  //   if (width < 768) {
+  //     setIsMobileMode(true);
+  //   } else {
+  //     setIsMobileMode(false);
+  //   }
+  // });
 
   return (
     <>
