@@ -31,6 +31,14 @@
   margin-right: auto;
   width: 100vw;
 
+  &.portfolio {
+    background-color: #d9d8d8;
+  }
+
+  &.impressum {
+    background-color: #688563;
+  }
+
   &:hover {
     cursor: pointer;
   }

@@ -29,7 +29,11 @@ $fontColor: #4b4a4a;
     line-height: 40px;
     font-size: 20px;
     text-align: left;
-    padding: 3rem 0rem 3rem 0rem;
+    padding: 3rem 0rem;
+
+    @media (max-width: 1200px) {
+      padding: 1rem 0rem;
+    }
 
     @media (max-width: 768px) {
       width: 100%;
@@ -38,12 +42,16 @@ $fontColor: #4b4a4a;
 
   .name {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    &:hover {
+      cursor: pointer;
+      color: #01dcd1;
+    }
   }
 
   .description {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   a {

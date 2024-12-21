@@ -36,12 +36,13 @@ $harmony: #688563;
     }
 
     .title {
-      font-size: 2rem;
-      padding-bottom: 2rem;
+      font-size: 28px;
+      padding-bottom: 0.5rem;
       font-weight: 300;
       color: $harmony;
 
       &.lh {
+        font-size: 28px;
         @media (max-width: 768px) {
           line-height: 40px;
         }
@@ -50,9 +51,14 @@ $harmony: #688563;
 
     .description {
       white-space: pre-line;
-      width: 65%;
+      width: 75%;
       font-weight: 400;
-      font-size: 1rem;
+      padding-top: 1rem;
+
+      @media (max-width: 1200px) {
+        width: 90%;
+      }
+
       @media (max-width: 768px) {
         width: 100%;
       }
@@ -60,8 +66,13 @@ $harmony: #688563;
 
     .description_secondary {
       padding-top: 2rem;
-      width: 65%;
+      width: 75%;
       font-weight: 400;
+
+      @media (max-width: 1200px) {
+        width: 90%;
+      }
+
       @media (max-width: 768px) {
         width: 100%;
       }
@@ -70,7 +81,6 @@ $harmony: #688563;
     .description_secondary-main,
     .description_third-main {
       font-weight: 400;
-      font-size: 1.25rem;
       padding-right: 1em;
       color: $harmony;
       @media (max-width: 767px) {
@@ -86,6 +96,11 @@ $harmony: #688563;
       display: flex;
       flex-direction: column;
       padding-top: 1.5em;
+      width: 75%;
+
+      @media (max-width: 1200px) {
+        width: 90%;
+      }
 
       .description_secondary-description {
         font-weight: 400;
@@ -104,4 +119,19 @@ $harmony: #688563;
 
 .angled-line-project {
   padding-top: 5rem;
+}
+
+.description_secondary-main,
+.description_third-main,
+.description_secondary-description,
+.description_third-main,
+.description_third-description,
+.description,
+.description_secondary-main,
+.description_third-main {
+  font-size: 1.25rem;
+}
+
+.lh {
+  font-size: 28px;
 }

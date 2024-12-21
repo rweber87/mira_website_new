@@ -1,7 +1,8 @@
-.header-image-wrapper {
-  padding-top: 7rem;
-}
-
+.header-image-wrapper,
 .empty-image-wrapper {
   padding-top: 7rem;
+
+  @media (max-width: 768px) {
+    padding-top: 5.6rem;
+  }
 }

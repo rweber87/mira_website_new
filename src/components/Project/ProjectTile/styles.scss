@@ -77,6 +77,10 @@
     }
   }
 
+  &__text {
+    line-height: 2rem;
+  }
+
   &__text,
   &__bot-text {
     text-align: center;
@@ -85,7 +89,7 @@
   }
 
   &__bot-text {
-    padding-top: 1em;
+    padding-top: 0.5em;
     font-size: 1rem;
   }
 }

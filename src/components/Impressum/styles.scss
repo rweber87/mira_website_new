@@ -19,17 +19,35 @@
 
   .section-wrapper {
     padding-bottom: 4em;
+    font-size: 1.25rem;
+    line-height: 30px;
 
     .section-header {
       padding-bottom: 2rem;
-      font-weight: 600;
+      font-weight: 200;
+      font-size: 28px;
     }
 
     .section-text-section {
       padding-bottom: 1.5em;
+
+      .bold {
+        font-weight: 700;
+      }
       .secondary-header {
         margin-bottom: -1em;
       }
     }
   }
+
+  .section-header,
+  .section-text-section {
+    font-size: 1.25rem;
+    line-height: 30px;
+  }
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 0px;
 }

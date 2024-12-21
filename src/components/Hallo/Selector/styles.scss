@@ -4,13 +4,13 @@
   font-family: 'Raleway', sans-serif;
   color: white;
   line-height: 40px;
-  font-size: 1.25rem;
+  font-size: 1rem;
 
   &__text-wrapper {
     width: 1170px;
     margin-right: auto;
     margin-left: auto;
-    padding: 3rem 0rem;
+    padding: 6rem 0rem;
     display: flex;
     flex-direction: column;
 
@@ -55,13 +55,22 @@
 
   .words-wrapper {
     .word {
-      padding: 0rem 3rem 0rem 0rem;
+      padding: 0rem 2rem 0rem 0rem;
       transition: font-weight 0.2s ease, text-shadow 0.2s ease;
       // letter-spacing: 2px;
       font-weight: 200;
+      font-size: 1.25rem;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
 
       &.selected {
         font-weight: bold;
+      }
+
+      &.not-selected {
+        opacity: 0.7;
       }
     }
   }

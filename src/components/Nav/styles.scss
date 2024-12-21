@@ -13,6 +13,10 @@ $underline: #ca5541;
   position: fixed;
   overflow: hidden;
 
+  @media (max-width: 768px) {
+    height: 90px;
+  }
+
   &.active {
     background: $mainGreen;
     color: white;
@@ -35,7 +39,7 @@ $underline: #ca5541;
   .first_name {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 200;
   }
 
   &__name {
@@ -44,10 +48,15 @@ $underline: #ca5541;
     font-style: normal;
     margin-top: auto;
     color: $mainGreen;
-    font-size: 2.5rem;
-    bottom: -77px !important;
+    font-size: 3.5rem;
+    bottom: -84px !important;
     position: absolute;
     padding-top: 5rem;
+
+    @media (max-width: 768px) {
+      font-size: 3rem;
+      bottom: -66px !important;
+    }
 
     &.active {
       color: white;

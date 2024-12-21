@@ -1,30 +1,36 @@
 import { useState } from 'react';
 
 import './styles.scss';
-const categories = ['Print', 'Digital', 'Leistungen'];
+const categories = ['Print', 'Digital', 'Der Kleber', 'Teamwork'];
 const words = [
-  { word: 'Logoentwicklung', category: 'Digital' },
-  { word: 'Geschäftsausstattungen', category: 'Print' },
-  { word: 'Visual Identity', category: 'Digital' },
-  { word: 'Style Guides', category: 'Print' },
-  { word: 'Flyer', category: 'Digital' },
-  { word: 'Poster', category: 'Digital' },
-  { word: 'Bücher', category: 'Print' },
-  { word: 'Kataloge & Magazine', category: 'Leistungen' },
-  { word: 'Verpackungen', category: 'Digital' },
-  { word: 'Merchandise ', category: 'Leistungen' },
-  { word: 'Banner & Roll-ups', category: 'Leistungen' },
-  { word: 'Web Banner ', category: 'Leistungen' },
-  { word: 'Anzeigen', category: 'Leistungen' },
-  { word: 'Messestände', category: 'Digital' },
-  { word: 'Außenwerbung', category: 'Print' },
-  { word: 'Gestaltung, Satz und Reinzeichnung ', category: 'Digital' },
-  { word: 'Web Design & UI/UX', category: 'Leistungen' },
-  { word: 'Animation', category: 'Leistungen' },
-  { word: 'Bildbearbeitung und -retusche', category: 'Print' },
-  { word: 'Projekt- und Druckabwicklung', category: 'Print' },
-  { word: 'Inhalte strukturieren', category: 'Digital' },
-  { word: 'Ideen sammeln', category: 'Leistungen' },
+  { word: 'Flyer', category: ['Print'] },
+  { word: 'Visual Identity', category: ['Der Kleber'] },
+  { word: 'Poster', category: ['Print'] },
+  { word: 'Style Guides', category: ['Der Kleber'] },
+  { word: 'Animation', category: ['Digital'] },
+  { word: 'Geschäftsausstattung', category: ['Print'] },
+  { word: 'Brainsprouting', category: ['Der Kleber'] },
+  { word: 'Anzeigen', category: ['Print'] },
+  { word: 'Inhalte strukturieren', category: ['Der Kleber'] },
+  { word: 'Webdesign', category: ['Teamwork'] },
+  { word: 'Messestände', category: ['Print'] },
+  { word: 'Projekt- und Druckabwicklung', category: ['Der Kleber'] },
+  { word: 'Außenwerbung', category: ['Print'] },
+  { word: 'Bildbearbeitung und -retusche', category: ['Der Kleber'] },
+  { word: 'Webdesign', category: ['Digital', 'Teamwork'] },
+  { word: 'Buchcover', category: ['Print'] },
+  { word: 'Broschüren und Magazine', category: ['Print'] },
+  { word: 'Layout und Satz', category: ['Der Kleber'] },
+  { word: 'Verpackung', category: ['Print'] },
+  { word: 'Logoentwicklung', category: ['Der Kleber'] },
+  { word: 'Typografie', category: ['Der Kleber'] },
+  { word: 'Social Media', category: ['Teamwork'] },
+  { word: 'Merchandise', category: ['Print'] },
+  { word: 'Wireframing', category: ['Digital'] },
+  { word: 'Banner und Roll-ups', category: ['Print'] },
+  { word: 'Web Banner und Anzeigen ', category: ['Digital'] },
+  { word: 'User Experience', category: ['Der Kleber'] },
+  { word: 'User Experience', category: ['Der Kleber', 'Teamwork'] },
 ];
 
 export default function Selector() {
@@ -44,9 +50,12 @@ export default function Selector() {
           ))}
         </div>
         <div className='words-wrapper'>
-          {words.map((word) => (
+          {words.map((word, idx) => (
             <div
-              className={`word ${category === word.category ? 'selected' : ''}`}
+              key={`${idx}-${word}`}
+              className={`word ${
+                word.category.includes(category) ? 'selected' : 'not-selected'
+              }`}
             >
               {word.word}
             </div>

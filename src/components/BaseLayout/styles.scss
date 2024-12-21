@@ -4,7 +4,7 @@
   align-items: center;
   padding: 5em 2em 4em 2em;
   background-color: #d9d8d8;
-  padding-bottom: 10rem;
+  padding-bottom: 4rem;
   flex-direction: column;
 
   &.hallo {
@@ -17,7 +17,7 @@
   }
 
   @media (max-width: 768px) {
-    padding: 2rem 2rem 7rem 2rem;
+    padding: 2rem 2rem 4rem 2rem;
   }
 
   &.project {

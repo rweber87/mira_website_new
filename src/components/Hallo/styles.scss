@@ -109,7 +109,7 @@
     width: 1170px;
     margin-right: auto;
     margin-left: auto;
-    padding: 3rem 0rem;
+    padding: 6rem 0rem;
     @media (max-width: 1200px) {
       width: 760px;
     }
@@ -131,14 +131,18 @@
 }
 
 .bottom-section-wrapper {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
   width: 100vw;
-  background: white;
+  background: #d74e01;
+  color: white;
 
   &__text-wrapper {
     width: 1170px;
     margin-right: auto;
     margin-left: auto;
-    padding: 3rem 0rem 1rem 0rem;
+    padding: 4rem 0rem;
+    font-size: 3rem;
     @media (max-width: 1200px) {
       width: 760px;
     }

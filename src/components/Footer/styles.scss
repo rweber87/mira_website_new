@@ -61,7 +61,7 @@ $fontColor: #979797;
 
       .text {
         .text-footer-link {
-          font-weight: 600;
+          font-weight: 400;
           letter-spacing: 0.5px;
           text-decoration: none;
           color: white;
@@ -79,7 +79,7 @@ $fontColor: #979797;
     }
 
     .footer__column:first-of-type {
-      font-weight: 300;
+      font-weight: 400;
       @media (max-width: 768px) {
         width: auto;
         height: 10vh;

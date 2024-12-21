@@ -183,12 +183,12 @@ export const tiles = [
           url: 'https://www.youtube.com/watch?v=LCZoXBN5T9w&list=PLxEZmY5DKdREQ4GwfiuCTQDB-lOMrz1v1&index=1',
         },
         {
-          name: 'Theresa Kosmetikstudio',
+          name: 'Theresa - Kosmetikstudio',
           description:
             'Logo,  Geschäftsausstattung,  Flyer,  Preislisten,  Gutscheine',
         },
         {
-          name: 'LaMano Kosmetikstudio',
+          name: 'La Mano - Kosmetikstudio',
           description: 'Logo, Geschäftsausstattung',
         },
         {
@@ -327,7 +327,7 @@ export const tiles = [
       secondary: '',
       secondaryMain: 'Umsetzung',
       secondaryDescription:
-        'Key Visual - Layout und Satz für Programmheft, Plakate, Flyer, Banner und Roll-Ups, Lanyards & Badges - Merchandise - Bauchbinden für Livestream - Web Design',
+        'Key Visual, Layout und Satz für Programmheft, Plakate, Flyer, Banner und Roll-Ups, Lanyards & Badges, Merchandise, Bauchbinden für Livestream, Web Design',
       thirdMain: 'Team',
       thirdDescription:
         'Julia Moldenhauer und Almut Schmitz: Eventkoordination<br>Robbie Weber: Programmierung Webseite<br>Eric Ideler: Fotografie',
@@ -742,14 +742,6 @@ export const tiles = [
         ],
         [
           {
-            src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_9.png',
-            width: 1170,
-            height: 780,
-            alt: 'project7Image9',
-          },
-        ],
-        [
-          {
             src: primaryUrl + projectLoc + 'Kloepfer/Kloepfer_10.png',
             width: 1170,
             height: 780,
@@ -926,8 +918,8 @@ export const tiles = [
           },
         ],
       ],
-      title: 'Zeitscheine',
-      type: 'Geschenk zum 60. Geburtstag',
+      title: 'Geschenk zum 60. Geburtstag',
+      type: 'Zeitscheine',
       description:
         'Was schenkt man zum 60. Geburtstag? Zeug hat man in dem Alter wahrscheinlich genug. Lieber was mit Substanz. Etwas, das man im Geschäft nicht bekommt. Gemeinsame Zeit! Mit den Zeitscheinen konnte sich das Geburtstagskind Aktivitäten „kaufen“: Eisstockschießen, ein Städtetrip oder ein Spieleabend... Gemeinsam Zeit verbringen – that’s real value!',
       secondary: '',
@@ -944,6 +936,7 @@ export const tiles = [
     id: 10,
     isProjectTile: true,
     classValue: 'text',
+    headerImage: primaryUrl + projectLoc + 'Animation/Animation_Header.gif',
     page: {
       images: [],
       videos: [
@@ -1017,6 +1010,17 @@ export const tiles = [
             src:
               primaryUrl +
               projectLoc +
+              'Kinderliederbuch/Kinderliederbuch_6.png',
+            width: 1170,
+            height: 678,
+            alt: 'project12Image6',
+          },
+        ],
+        [
+          {
+            src:
+              primaryUrl +
+              projectLoc +
               'Kinderliederbuch/Kinderliederbuch_4.png',
             width: 1170,
             height: 783,
@@ -1034,25 +1038,14 @@ export const tiles = [
             alt: 'project12Image5',
           },
         ],
-        [
-          {
-            src:
-              primaryUrl +
-              projectLoc +
-              'Kinderliederbuch/Kinderliederbuch_6.png',
-            width: 1170,
-            height: 678,
-            alt: 'project12Image6',
-          },
-        ],
       ],
       title: 'Geschenk für Nachwuchs',
       type: 'Kinderliederbuch',
       description:
-        'Gemeinsam mit singfreudigen Freunden kreierte ich ein Kinderliederbuch mit CD – mit liebevollen und lustigen Illustrationen. Die Lieder wurden von uns selbst eingesungen beziehungsweise eingespielt.',
+        'Gemeinsam mit singfreudigen Freunden kreierte ich ein Kinderliederbuch mit CD, mit liebevollen und lustigen Illustrationen. Die Lieder wurden von uns selbst eingesungen beziehungsweise eingespielt.',
       secondaryMain: 'Umsetzung',
       secondaryDescription:
-        'Layout und Gestaltung Liederbuch - CD - Tonaufnahmen - Projektkoordination',
+        'Layout und Gestaltung Liederbuch, CD, Tonaufnahmen, Projektkoordination',
       thirdMain: 'Team',
       thirdDescription: 'Nina, Domi, Anna, Gabriele und Ramon',
     },

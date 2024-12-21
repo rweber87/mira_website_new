@@ -3,22 +3,36 @@ import { Link } from 'react-router-dom';
 import { tiles } from '../../Portfolio/tiles';
 import useProjectId from '../../../hooks/projectId';
 import usePageNavigation from '../../../hooks/hasNextPreviousPage';
+import useWindowSize from '../../../hooks/windowResize';
 
 import './styles.scss';
 
 export default function ChevronLeft(props) {
-  const [strokeWidth, setStrokeWidth] = useState(0.25);
+  // eslint-disable-next-line no-unused-vars
+  const [_, setIsMobileMode] = useState(false);
+  const [strokeWidth, setStrokeWidth] = useState(
+    window.innerWidth > 768 ? 0.25 : 0.5
+  );
   const pages = tiles.filter((tile) => tile.isProjectTile);
   const projectId = useProjectId();
-  const { hasPrevious, lastId, prevId } = usePageNavigation(pages, projectId);
+  const { hasPrevious, prevId } = usePageNavigation(pages, projectId);
   const style = {
     transition: 'stroke-width 0.3s ease',
   };
 
+  useWindowSize((newSize) => {
+    const { width } = newSize;
+    if (width < 769) {
+      setIsMobileMode(true);
+    } else {
+      setIsMobileMode(false);
+    }
+  });
+
   return (
     <Link
       className='left'
-      to={`/portfolio/${hasPrevious ? prevId : lastId}`}
+      to={hasPrevious ? `/portfolio/${prevId}` : '/portfolio'}
       onMouseEnter={() => setStrokeWidth(0.5)}
       onMouseLeave={() => setStrokeWidth(0.25)}
     >

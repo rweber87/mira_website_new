@@ -57,7 +57,7 @@ export default function BaseLayout(props) {
       >
         {children}
       </div>
-      <ChevronUp />
+      {pathname.includes('hallo') ? null : <ChevronUp />}
       <Footer />
     </>
   );

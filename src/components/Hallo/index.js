@@ -4,25 +4,9 @@ import Selector from './Selector';
 import './styles.scss';
 
 export default function Hallo() {
-  // const [isMobileMode, setIsMobileMode] = useState(false);
-  const canDo = [
-    'langjährige und vertrauensvolle Geschäftsbeziehungen schätzt und pflegst',
-    'gerne eine extra Runde drehst, um zu einem stimmigen Ergebnis zu kommen, das Ästhetik und Funktionalität gleichwertig berücksichtigt',
-    'offen für ehrliches Feedback und neue Perspektiven bist',
-  ];
-
   useEffect(() => {
     window.scrollTo(-50, 0);
   }, []);
-
-  // useWindowSize((newSize) => {
-  //   const { width } = newSize;
-  //   if (width < 768) {
-  //     setIsMobileMode(true);
-  //   } else {
-  //     setIsMobileMode(false);
-  //   }
-  // });
 
   return (
     <>
@@ -30,7 +14,7 @@ export default function Hallo() {
         <div className='top-section-wrapper__text-wrapper'>
           <div className='top-section-wrapper__text first'>
             Ich bin selbstständige Mediengestalterin mit{' '}
-            {new Date().getFullYear() - 2011} Jahre Berufserfahrung in
+            {new Date().getFullYear() - 2011} Jahren Berufserfahrung in
             verschiedenen Branchen. Über die Jahre ist eine bunte Palette
             verschiedener Projekte entstanden. Ich verstehe mich als
             Allrounderin, die Spaß daran hat, sich zu strecken und sich in neue
@@ -50,16 +34,7 @@ export default function Hallo() {
       <Selector />
       <div className='bottom-section-wrapper'>
         <div className='bottom-section-wrapper__text-wrapper'>
-          <div className='bottom-section-wrapper__text-header'>
-            Du bist bei mir an der richtigen Adresse, wenn du
-          </div>
-          <div className='bottom-section-wrapper__text'>
-            <ul className='info-text'>
-              {canDo.map((c, idx) => (
-                <li key={`can-do-${idx}`}>{c}</li>
-              ))}
-            </ul>
-          </div>
+          Get in touch!
         </div>
       </div>
     </>
