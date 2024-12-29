@@ -22,6 +22,10 @@
     font-size: 1.25rem;
     line-height: 30px;
 
+    &.npb {
+      padding-bottom: 0em;
+    }
+
     .section-header {
       padding-bottom: 2rem;
       font-weight: 200;

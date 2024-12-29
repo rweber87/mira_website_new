@@ -7,7 +7,7 @@ export const tiles = [
   {
     imageSrc: null,
     topText:
-      'Ich gestalte Digital- und Printmedien mit Kreativität, Liebe zum Detail und einem Blick für das große Ganze. Ich helfe dir, eine visuelle Sprache für deine Inhalte zu finden. Let’s tell a good story!',
+      'Ich gestalte Digital- und Print- medien mit Kreativität, Liebe zum Detail und einem Blick für das große Ganze. Ich helfe dir, eine visuelle Sprache für deine Inhalte zu finden. Let’s tell a good story!',
     botText: '',
     id: 0,
     isProjectTile: false,
@@ -152,6 +152,7 @@ export const tiles = [
         ],
       ],
       title: 'Logos & Geschäftsausstattungen',
+      alt: "<div class='lh-top'>Logos &</div><div class='lh-bot'>Geschäftsausstattungen</div>",
       description:
         'Logogestaltung und die Ausarbeitung eines auf allen Ebenen stimmigen Erscheinungsbilds gehören zu meinen Lieblingsaufgaben. Der Prozess erfordert große Feinfühligkeit, ist immer wieder spannend und oft überraschend. Hier ein paar Beispiele meiner kreativen Ausbrüche.',
       secondary: '',

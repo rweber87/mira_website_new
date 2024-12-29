@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Selector from './Selector';
+import { Link } from 'react-router-dom';
 
 import './styles.scss';
 
@@ -26,8 +27,16 @@ export default function Hallo() {
             Mein Arbeitsplatz befindet sich mitten im Zentrum der Stadt München.
             Wenn ich nicht gerade im schönsten Hinterhof-Büro der Welt bin und
             arbeite, liebe ich es mit dem Radl zu fahren, meinen Pflanzen Namen
-            zu geben und mit meinem Barbershop-Quartett „Veto“ auf der Bühne zu
-            stehen.
+            zu geben und mit meinem Barbershop-Quartett{' '}
+            <Link
+              className='veto'
+              to='https://www.instagram.com/veto_quartet/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              „Veto“
+            </Link>{' '}
+            auf der Bühne zu stehen.
           </div>
         </div>
       </div>

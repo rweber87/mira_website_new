@@ -46,7 +46,7 @@ export default function ChevronUp({ props }) {
         viewBox='0 0 24 24'
         role='img'
         aria-labelledby='chevronUpIconTitle'
-        stroke='#CA5541'
+        stroke={strokeWidth === 0.5 ? '#01dcd1' : '#CA5541'}
         strokeWidth={strokeWidth}
         strokeLinecap='square'
         strokeLinejoin='miter'

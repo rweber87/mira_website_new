@@ -12,7 +12,7 @@ export default function Impressum() {
       <div className='section-wrapper'>
         <div className='section-header'>Impressum</div>
         <div className='section-text-section'>
-          <div className='section-text bold'>Angaben gemäß § 5 TMG:</div>
+          <div className='section-text bold'>Angaben gemäß § 5 TMG</div>
           <div className='section-text'>Mira Taferner</div>
           <div className='section-text'>Konzeption und Gestaltung</div>
           <div className='section-text'>Baaderstraße 23</div>
@@ -35,7 +35,7 @@ export default function Impressum() {
           </div>
         </div>
       </div>
-      <div className='section-wrapper'>
+      <div className='section-wrapper npb'>
         <div className='section-header'>Datenschutzerklärung</div>
         <div className='section-text-section'>
           <div className='section-text'>

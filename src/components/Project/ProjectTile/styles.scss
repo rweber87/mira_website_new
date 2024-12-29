@@ -12,10 +12,14 @@
   &.text-1 {
     text-align: left;
     font-size: 1.4rem;
-    line-height: 45px;
+    line-height: 44px;
     font-weight: 400;
     color: #ca5541;
     transition: color 0.5s;
+
+    &.hovered {
+      color: #01dcd1;
+    }
 
     &.get-in-touch {
       display: flex;
@@ -41,6 +45,10 @@
     font-weight: 400;
     color: #ca5541;
     transition: color 0.5s;
+
+    &.hovered {
+      color: #01dcd1;
+    }
     &:hover {
       color: #01dcd1;
     }

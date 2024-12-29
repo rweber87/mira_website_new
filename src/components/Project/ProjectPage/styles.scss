@@ -40,12 +40,10 @@ $harmony: #688563;
       padding-bottom: 0.5rem;
       font-weight: 300;
       color: $harmony;
+      display: inline;
 
       &.lh {
         font-size: 28px;
-        @media (max-width: 768px) {
-          line-height: 40px;
-        }
       }
     }
 
@@ -134,4 +132,10 @@ $harmony: #688563;
 
 .lh {
   font-size: 28px;
+}
+
+@media (max-width: 768px) {
+  .lh-top {
+    padding-bottom: 0.2rem;
+  }
 }

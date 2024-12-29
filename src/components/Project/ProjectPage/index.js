@@ -39,7 +39,12 @@ export default function ProjectPage() {
             <div className='title lh'>{page.title}</div>
           </span>
         ) : (
-          <div className='title lh'>{page.title}</div>
+          <div
+            className='title lh this'
+            dangerouslySetInnerHTML={{
+              __html: page.alt ? page.alt : page.title,
+            }}
+          ></div>
         )}
         {page.description && (
           <div className='description'>{page.description}</div>

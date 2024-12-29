@@ -11,16 +11,29 @@ export default function HamburgerMenu() {
   const tmp = pathname.slice(pathname.lastIndexOf('/'), pathname.length);
   const path = tmp.split('/')[1];
 
+  const setOpenHelper = () => {
+    const scopedIsOpen = !isOpen;
+    setIsOpen(scopedIsOpen);
+
+    if (scopedIsOpen) {
+      document.body.style.height = '100%';
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.height = 'auto';
+      document.body.style.overflow = '';
+    }
+  };
+
   return (
     <div className='mobile-menu'>
-      <Hamburger toggled={isOpen} toggle={setIsOpen} color='#ca5541' />
+      <Hamburger toggled={isOpen} toggle={setOpenHelper} color='#01dcd1' />
       <div className={`overlay ${isOpen ? 'open' : ''}`}>
         <Link
           className={`hamburger__main-link hallo ${
             pathname.includes('hallo') ? 'active' : ''
           }`}
           to='/hallo'
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setOpenHelper()}
         >
           Hallo
         </Link>
@@ -29,7 +42,7 @@ export default function HamburgerMenu() {
             pathname.includes('portfolio') ? 'active' : ''
           }`}
           to='/portfolio'
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setOpenHelper()}
         >
           Portfolio
         </Link>
@@ -43,7 +56,7 @@ export default function HamburgerMenu() {
                   path === `${tile.id}` ? 'active' : ''
                 }`}
                 to={`/portfolio/${tile.id}`}
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setOpenHelper()}
               >
                 {tile.botText ? (
                   <span className='type-span'>
