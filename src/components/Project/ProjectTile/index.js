@@ -56,7 +56,9 @@ export default function Tile({ tile }) {
           ref={elementRef}
         >
           <div
-            className={`tile ${classValue} ${hovered ? 'hovered' : ''}`}
+            className={`tile ${classValue} ${
+              hovered ? (classValue === 'text-1' ? '' : 'hovered') : ''
+            }`}
             dangerouslySetInnerHTML={{ __html: topText }}
           ></div>
         </Link>
