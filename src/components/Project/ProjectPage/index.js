@@ -16,8 +16,7 @@ export default function ProjectPage() {
   // eslint-disable-next-line
   const project = tiles.find((project) => project.id == projectId);
   const { page } = project;
-  const isLogoPage =
-    page.title === 'Logos & Geschäftsausstattungen' ? true : false;
+  const isLogoPage = page.title === 'Logos' ? true : false;
   const isAnimation = page.videos?.length ? true : false;
 
   useEffect(() => {

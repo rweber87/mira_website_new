@@ -16,7 +16,7 @@ export const tiles = [
   },
   {
     imageSrc: tileUrl + 'Landingpage_Logos.png',
-    topText: 'Logos &<br>Geschäftsausstattungen',
+    topText: 'Logos',
     botText: '',
     headerImage: primaryUrl + projectLoc + 'Logos/Logos_Header.png',
     id: 1,
@@ -151,8 +151,8 @@ export const tiles = [
           },
         ],
       ],
-      title: 'Logos & Geschäftsausstattungen',
-      alt: "<div class='lh-top'>Logos &</div><div class='lh-bot'>Geschäftsausstattungen</div>",
+      title: 'Logos',
+      alt: 'Logos',
       description:
         'Logogestaltung und die Ausarbeitung eines auf allen Ebenen stimmigen Erscheinungsbilds gehören zu meinen Lieblingsaufgaben. Der Prozess erfordert große Feinfühligkeit, ist immer wieder spannend und oft überraschend. Hier ein paar Beispiele meiner kreativen Ausbrüche.',
       secondary: '',
@@ -165,7 +165,7 @@ export const tiles = [
         {
           name: 'Praxis Uta Siebert - Therapeutin und Bindungsanalyikerin',
           description:
-            'Logo, Geschäftsausstattung, Webdesign, Flyer, Postkarten',
+            'Logo, Geschäftsausstattung, Web Design, Flyer, Postkarten',
           url: 'https://www.diebindungsanalytikerin.de/',
         },
         {
