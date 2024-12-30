@@ -46,7 +46,7 @@ export default function ChevronRight(props) {
           role='img'
           aria-labelledby='chevronRightIconTitle'
           stroke={strokeWidth === 0.5 ? '#01dcd1' : '#CA5541'}
-          strokeWidth={strokeWidth}
+          strokeWidth={0.25}
           strokeLinecap='square'
           strokeLinejoin='miter'
           fill='none'

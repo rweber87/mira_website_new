@@ -26,7 +26,7 @@ export default function ChevronUp({ props }) {
 
   const determineBackgroundClass = () => {
     return pathname.includes('impressum')
-      ? 'impressum'
+      ? 'impressum-arrow'
       : pathname.includes('portfolio') && !pathname.includes('portfolio/')
       ? 'portfolio'
       : '';
@@ -47,7 +47,7 @@ export default function ChevronUp({ props }) {
         role='img'
         aria-labelledby='chevronUpIconTitle'
         stroke={strokeWidth === 0.5 ? '#01dcd1' : '#CA5541'}
-        strokeWidth={strokeWidth}
+        strokeWidth={0.25}
         strokeLinecap='square'
         strokeLinejoin='miter'
         fill='none'

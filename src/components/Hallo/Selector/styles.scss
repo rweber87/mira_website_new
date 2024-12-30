@@ -62,11 +62,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     line-height: 50px;
+    @media (max-width: 768px) {
+      line-height: 45px;
+    }
   }
 
   .words-wrapper {
     .word {
-      padding: 0rem 2rem 0rem 0rem;
+      padding-right: 2rem;
       transition: font-weight 0.2s ease, text-shadow 0.2s ease;
       // letter-spacing: 2px;
       font-weight: 200;
@@ -74,6 +77,7 @@
 
       @media (max-width: 768px) {
         font-size: 1rem;
+        padding-right: 0.75rem;
       }
 
       &.selected {
