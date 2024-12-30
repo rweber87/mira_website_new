@@ -19,6 +19,7 @@ export default function YouTubeList({ videoUrls, styleProp }) {
             src={videoUrl}
             controls
             autoPlay
+            playsInline
             muted
             loop
           />
